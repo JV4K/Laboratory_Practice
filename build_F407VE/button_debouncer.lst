@@ -1,0 +1,785 @@
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"button_debouncer.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/button_debouncer.c"
+  20              		.global	__aeabi_f2d
+  21              		.global	__aeabi_dmul
+  22              		.global	__aeabi_ddiv
+  23              		.global	__aeabi_d2f
+  24              		.section	.text.calculate_alpha,"ax",%progbits
+  25              		.align	1
+  26              		.syntax unified
+  27              		.thumb
+  28              		.thumb_func
+  30              	calculate_alpha:
+  31              	.LVL0:
+  32              	.LFB0:
+   1:Core/Src/button_debouncer.c **** #include "button_debouncer.h"
+   2:Core/Src/button_debouncer.c **** 
+   3:Core/Src/button_debouncer.c **** #ifndef M_PI
+   4:Core/Src/button_debouncer.c **** #define M_PI 3.14159265358979323846f 
+   5:Core/Src/button_debouncer.c **** #endif
+   6:Core/Src/button_debouncer.c **** 
+   7:Core/Src/button_debouncer.c **** // --- Private Functions ---
+   8:Core/Src/button_debouncer.c **** 
+   9:Core/Src/button_debouncer.c **** /**
+  10:Core/Src/button_debouncer.c ****  * @brief Calculates the EMA filter coefficient (alpha) based on time constants.
+  11:Core/Src/button_debouncer.c ****  * * @param sample_period_ms The update period in milliseconds.
+  12:Core/Src/button_debouncer.c ****  * @param cutoff_freq_hz The desired filter cutoff frequency in Hertz.
+  13:Core/Src/button_debouncer.c ****  * @return The calculated alpha value (0.0 to 1.0).
+  14:Core/Src/button_debouncer.c ****  */
+  15:Core/Src/button_debouncer.c **** static float calculate_alpha(float sample_period_ms, float cutoff_freq_hz) {
+  33              		.loc 1 15 76 view -0
+  34              		.cfi_startproc
+  35              		@ args = 0, pretend = 0, frame = 0
+  36              		@ frame_needed = 0, uses_anonymous_args = 0
+  37              		.loc 1 15 76 is_stmt 0 view .LVU1
+  38 0000 08B5     		push	{r3, lr}
+  39              	.LCFI0:
+  40              		.cfi_def_cfa_offset 8
+  41              		.cfi_offset 3, -8
+  42              		.cfi_offset 14, -4
+  43 0002 2DED028B 		vpush.64	{d8}
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 2
+
+
+  44              	.LCFI1:
+  45              		.cfi_def_cfa_offset 16
+  46              		.cfi_offset 80, -16
+  47              		.cfi_offset 81, -12
+  48 0006 10EE900A 		vmov	r0, s1
+  16:Core/Src/button_debouncer.c ****     // Convert sample period to seconds
+  17:Core/Src/button_debouncer.c ****     float Ts = sample_period_ms / 1000.0f; 
+  49              		.loc 1 17 5 is_stmt 1 view .LVU2
+  50              		.loc 1 17 11 is_stmt 0 view .LVU3
+  51 000a DFED137A 		vldr.32	s15, .L3+8
+  52 000e 80EE278A 		vdiv.f32	s16, s0, s15
+  53              	.LVL1:
+  18:Core/Src/button_debouncer.c ****     
+  19:Core/Src/button_debouncer.c ****     // Calculate the time constant (Tau = RC) based on the desired cutoff frequency
+  20:Core/Src/button_debouncer.c ****     // Tau = 1 / (2 * PI * fc)
+  21:Core/Src/button_debouncer.c ****     float Tau = 1.0f / (2.0f * M_PI * cutoff_freq_hz);
+  54              		.loc 1 21 5 is_stmt 1 view .LVU4
+  55              		.loc 1 21 37 is_stmt 0 view .LVU5
+  56 0012 FFF7FEFF 		bl	__aeabi_f2d
+  57              	.LVL2:
+  58              		.loc 1 21 37 view .LVU6
+  59 0016 0EA3     		adr	r3, .L3
+  60 0018 D3E90023 		ldrd	r2, [r3]
+  61 001c FFF7FEFF 		bl	__aeabi_dmul
+  62              	.LVL3:
+  63 0020 0246     		mov	r2, r0
+  64 0022 0B46     		mov	r3, r1
+  65              		.loc 1 21 22 view .LVU7
+  66 0024 0020     		movs	r0, #0
+  67 0026 0D49     		ldr	r1, .L3+12
+  68 0028 FFF7FEFF 		bl	__aeabi_ddiv
+  69              	.LVL4:
+  70              		.loc 1 21 11 view .LVU8
+  71 002c FFF7FEFF 		bl	__aeabi_d2f
+  72              	.LVL5:
+  73 0030 00EE100A 		vmov	s0, r0
+  74              	.LVL6:
+  22:Core/Src/button_debouncer.c **** 
+  23:Core/Src/button_debouncer.c ****     // Calculate alpha using the formula for discrete-time RC filter (exponential decay)
+  24:Core/Src/button_debouncer.c ****     // alpha = 1 - exp(-Ts / Tau)
+  25:Core/Src/button_debouncer.c ****     // M_PI is typically defined in math.h
+  26:Core/Src/button_debouncer.c ****     return 1.0f - expf(-Ts / Tau); 
+  75              		.loc 1 26 5 is_stmt 1 view .LVU9
+  76              		.loc 1 26 24 is_stmt 0 view .LVU10
+  77 0034 B1EE488A 		vneg.f32	s16, s16
+  78              	.LVL7:
+  79              		.loc 1 26 19 view .LVU11
+  80 0038 88EE000A 		vdiv.f32	s0, s16, s0
+  81 003c FFF7FEFF 		bl	expf
+  82              	.LVL8:
+  27:Core/Src/button_debouncer.c **** }
+  83              		.loc 1 27 1 view .LVU12
+  84 0040 F7EE007A 		vmov.f32	s15, #1.0e+0
+  85 0044 37EEC00A 		vsub.f32	s0, s15, s0
+  86 0048 BDEC028B 		vldm	sp!, {d8}
+  87              	.LCFI2:
+  88              		.cfi_restore 80
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 3
+
+
+  89              		.cfi_restore 81
+  90              		.cfi_def_cfa_offset 8
+  91 004c 08BD     		pop	{r3, pc}
+  92              	.L4:
+  93 004e 00BF     		.align	3
+  94              	.L3:
+  95 0050 182D4454 		.word	1413754136
+  96 0054 FB211940 		.word	1075388923
+  97 0058 00007A44 		.word	1148846080
+  98 005c 0000F03F 		.word	1072693248
+  99              		.cfi_endproc
+ 100              	.LFE0:
+ 102              		.section	.text.Button_Init,"ax",%progbits
+ 103              		.align	1
+ 104              		.global	Button_Init
+ 105              		.syntax unified
+ 106              		.thumb
+ 107              		.thumb_func
+ 109              	Button_Init:
+ 110              	.LVL9:
+ 111              	.LFB1:
+  28:Core/Src/button_debouncer.c **** 
+  29:Core/Src/button_debouncer.c **** // --- Public Functions Implementation ---
+  30:Core/Src/button_debouncer.c **** 
+  31:Core/Src/button_debouncer.c **** bool Button_Init(
+  32:Core/Src/button_debouncer.c ****     Button_t* btn,
+  33:Core/Src/button_debouncer.c ****     float sample_period_ms,
+  34:Core/Src/button_debouncer.c ****     float cutoff_freq_hz,
+  35:Core/Src/button_debouncer.c ****     float th_high,
+  36:Core/Src/button_debouncer.c ****     float th_low,
+  37:Core/Src/button_debouncer.c ****     uint8_t initial_raw_state
+  38:Core/Src/button_debouncer.c **** ) {
+ 112              		.loc 1 38 3 is_stmt 1 view -0
+ 113              		.cfi_startproc
+ 114              		@ args = 0, pretend = 0, frame = 0
+ 115              		@ frame_needed = 0, uses_anonymous_args = 0
+  39:Core/Src/button_debouncer.c ****     if (!btn || th_high <= th_low || th_high > 1.0f || th_low < 0.0f || sample_period_ms <= 0.0f ||
+ 116              		.loc 1 39 5 view .LVU14
+ 117              		.loc 1 39 8 is_stmt 0 view .LVU15
+ 118 0000 C8B3     		cbz	r0, .L7
+  38:Core/Src/button_debouncer.c ****     if (!btn || th_high <= th_low || th_high > 1.0f || th_low < 0.0f || sample_period_ms <= 0.0f ||
+ 119              		.loc 1 38 3 view .LVU16
+ 120 0002 38B5     		push	{r3, r4, r5, lr}
+ 121              	.LCFI3:
+ 122              		.cfi_def_cfa_offset 16
+ 123              		.cfi_offset 3, -16
+ 124              		.cfi_offset 4, -12
+ 125              		.cfi_offset 5, -8
+ 126              		.cfi_offset 14, -4
+ 127 0004 2DED028B 		vpush.64	{d8}
+ 128              	.LCFI4:
+ 129              		.cfi_def_cfa_offset 24
+ 130              		.cfi_offset 80, -24
+ 131              		.cfi_offset 81, -20
+ 132 0008 B0EE418A 		vmov.f32	s16, s2
+ 133 000c F0EE618A 		vmov.f32	s17, s3
+ 134 0010 0C46     		mov	r4, r1
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 4
+
+
+ 135 0012 0546     		mov	r5, r0
+ 136              		.loc 1 39 14 discriminator 1 view .LVU17
+ 137 0014 B4EEE11A 		vcmpe.f32	s2, s3
+ 138 0018 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 139 001c 2DD9     		bls	.L8
+ 140              		.loc 1 39 35 discriminator 2 view .LVU18
+ 141 001e F7EE007A 		vmov.f32	s15, #1.0e+0
+ 142 0022 B4EEE71A 		vcmpe.f32	s2, s15
+ 143 0026 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 144 002a 2ADC     		bgt	.L9
+ 145              		.loc 1 39 53 discriminator 3 view .LVU19
+ 146 002c F5EEC01A 		vcmpe.f32	s3, #0
+ 147 0030 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 148 0034 27D4     		bmi	.L10
+ 149              		.loc 1 39 70 discriminator 4 view .LVU20
+ 150 0036 B5EEC00A 		vcmpe.f32	s0, #0
+ 151 003a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 152 003e 24D9     		bls	.L11
+ 153              		.loc 1 39 98 discriminator 5 view .LVU21
+ 154 0040 F5EEC00A 		vcmpe.f32	s1, #0
+ 155 0044 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 156 0048 21D9     		bls	.L12
+  40:Core/Src/button_debouncer.c ****         // Validation check failed
+  41:Core/Src/button_debouncer.c ****         return false;
+  42:Core/Src/button_debouncer.c ****     }
+  43:Core/Src/button_debouncer.c **** 
+  44:Core/Src/button_debouncer.c ****     // Calculate alpha based on user-defined time base and cutoff frequency
+  45:Core/Src/button_debouncer.c ****     btn->alpha = calculate_alpha(sample_period_ms, cutoff_freq_hz);
+ 157              		.loc 1 45 5 is_stmt 1 view .LVU22
+ 158              		.loc 1 45 18 is_stmt 0 view .LVU23
+ 159 004a FFF7FEFF 		bl	calculate_alpha
+ 160              	.LVL10:
+ 161              		.loc 1 45 16 discriminator 1 view .LVU24
+ 162 004e 85ED010A 		vstr.32	s0, [r5, #4]
+  46:Core/Src/button_debouncer.c **** 
+  47:Core/Src/button_debouncer.c ****     // Initialize state and thresholds
+  48:Core/Src/button_debouncer.c ****     btn->raw_state = initial_raw_state;
+ 163              		.loc 1 48 5 is_stmt 1 view .LVU25
+ 164              		.loc 1 48 20 is_stmt 0 view .LVU26
+ 165 0052 2C74     		strb	r4, [r5, #16]
+  49:Core/Src/button_debouncer.c ****     btn->stable_state = initial_raw_state;
+ 166              		.loc 1 49 5 is_stmt 1 view .LVU27
+ 167              		.loc 1 49 23 is_stmt 0 view .LVU28
+ 168 0054 6C74     		strb	r4, [r5, #17]
+  50:Core/Src/button_debouncer.c ****     
+  51:Core/Src/button_debouncer.c ****     // Set filtered value to match the initial state for stability
+  52:Core/Src/button_debouncer.c ****     btn->filtered_value = (float)initial_raw_state; 
+ 169              		.loc 1 52 5 is_stmt 1 view .LVU29
+ 170              		.loc 1 52 27 is_stmt 0 view .LVU30
+ 171 0056 07EE904A 		vmov	s15, r4	@ int
+ 172 005a F8EE677A 		vcvt.f32.u32	s15, s15
+ 173              		.loc 1 52 25 view .LVU31
+ 174 005e C5ED007A 		vstr.32	s15, [r5]
+  53:Core/Src/button_debouncer.c **** 
+  54:Core/Src/button_debouncer.c ****     // Configure Hysteresis
+  55:Core/Src/button_debouncer.c ****     btn->threshold_high = th_high;
+ 175              		.loc 1 55 5 is_stmt 1 view .LVU32
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 5
+
+
+ 176              		.loc 1 55 25 is_stmt 0 view .LVU33
+ 177 0062 85ED028A 		vstr.32	s16, [r5, #8]
+  56:Core/Src/button_debouncer.c ****     btn->threshold_low = th_low;
+ 178              		.loc 1 56 5 is_stmt 1 view .LVU34
+ 179              		.loc 1 56 24 is_stmt 0 view .LVU35
+ 180 0066 C5ED038A 		vstr.32	s17, [r5, #12]
+  57:Core/Src/button_debouncer.c **** 
+  58:Core/Src/button_debouncer.c ****     // Initialize Callbacks
+  59:Core/Src/button_debouncer.c ****     btn->on_rise_cb = NULL;
+ 181              		.loc 1 59 5 is_stmt 1 view .LVU36
+ 182              		.loc 1 59 21 is_stmt 0 view .LVU37
+ 183 006a 0023     		movs	r3, #0
+ 184 006c 6B61     		str	r3, [r5, #20]
+  60:Core/Src/button_debouncer.c ****     btn->on_fall_cb = NULL;
+ 185              		.loc 1 60 5 is_stmt 1 view .LVU38
+ 186              		.loc 1 60 21 is_stmt 0 view .LVU39
+ 187 006e AB61     		str	r3, [r5, #24]
+  61:Core/Src/button_debouncer.c ****     btn->cb_context = NULL;
+ 188              		.loc 1 61 5 is_stmt 1 view .LVU40
+ 189              		.loc 1 61 21 is_stmt 0 view .LVU41
+ 190 0070 EB61     		str	r3, [r5, #28]
+  62:Core/Src/button_debouncer.c **** 
+  63:Core/Src/button_debouncer.c ****     return true;
+ 191              		.loc 1 63 5 is_stmt 1 view .LVU42
+ 192              		.loc 1 63 12 is_stmt 0 view .LVU43
+ 193 0072 0120     		movs	r0, #1
+ 194 0074 02E0     		b	.L6
+ 195              	.LVL11:
+ 196              	.L7:
+ 197              	.LCFI5:
+ 198              		.cfi_def_cfa_offset 0
+ 199              		.cfi_restore 3
+ 200              		.cfi_restore 4
+ 201              		.cfi_restore 5
+ 202              		.cfi_restore 14
+ 203              		.cfi_restore 80
+ 204              		.cfi_restore 81
+  41:Core/Src/button_debouncer.c ****     }
+ 205              		.loc 1 41 16 view .LVU44
+ 206 0076 0020     		movs	r0, #0
+ 207              	.LVL12:
+  64:Core/Src/button_debouncer.c **** }
+ 208              		.loc 1 64 1 view .LVU45
+ 209 0078 7047     		bx	lr
+ 210              	.LVL13:
+ 211              	.L8:
+ 212              	.LCFI6:
+ 213              		.cfi_def_cfa_offset 24
+ 214              		.cfi_offset 3, -16
+ 215              		.cfi_offset 4, -12
+ 216              		.cfi_offset 5, -8
+ 217              		.cfi_offset 14, -4
+ 218              		.cfi_offset 80, -24
+ 219              		.cfi_offset 81, -20
+  41:Core/Src/button_debouncer.c ****     }
+ 220              		.loc 1 41 16 view .LVU46
+ 221 007a 0020     		movs	r0, #0
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 6
+
+
+ 222              	.LVL14:
+ 223              	.L6:
+ 224              		.loc 1 64 1 view .LVU47
+ 225 007c BDEC028B 		vldm	sp!, {d8}
+ 226              	.LCFI7:
+ 227              		.cfi_remember_state
+ 228              		.cfi_restore 80
+ 229              		.cfi_restore 81
+ 230              		.cfi_def_cfa_offset 16
+ 231              	.LVL15:
+ 232              		.loc 1 64 1 view .LVU48
+ 233 0080 38BD     		pop	{r3, r4, r5, pc}
+ 234              	.LVL16:
+ 235              	.L9:
+ 236              	.LCFI8:
+ 237              		.cfi_restore_state
+  41:Core/Src/button_debouncer.c ****     }
+ 238              		.loc 1 41 16 view .LVU49
+ 239 0082 0020     		movs	r0, #0
+ 240              	.LVL17:
+  41:Core/Src/button_debouncer.c ****     }
+ 241              		.loc 1 41 16 view .LVU50
+ 242 0084 FAE7     		b	.L6
+ 243              	.LVL18:
+ 244              	.L10:
+  41:Core/Src/button_debouncer.c ****     }
+ 245              		.loc 1 41 16 view .LVU51
+ 246 0086 0020     		movs	r0, #0
+ 247              	.LVL19:
+  41:Core/Src/button_debouncer.c ****     }
+ 248              		.loc 1 41 16 view .LVU52
+ 249 0088 F8E7     		b	.L6
+ 250              	.LVL20:
+ 251              	.L11:
+  41:Core/Src/button_debouncer.c ****     }
+ 252              		.loc 1 41 16 view .LVU53
+ 253 008a 0020     		movs	r0, #0
+ 254              	.LVL21:
+  41:Core/Src/button_debouncer.c ****     }
+ 255              		.loc 1 41 16 view .LVU54
+ 256 008c F6E7     		b	.L6
+ 257              	.LVL22:
+ 258              	.L12:
+  41:Core/Src/button_debouncer.c ****     }
+ 259              		.loc 1 41 16 view .LVU55
+ 260 008e 0020     		movs	r0, #0
+ 261              	.LVL23:
+  41:Core/Src/button_debouncer.c ****     }
+ 262              		.loc 1 41 16 view .LVU56
+ 263 0090 F4E7     		b	.L6
+ 264              		.cfi_endproc
+ 265              	.LFE1:
+ 267              		.section	.text.Button_Process,"ax",%progbits
+ 268              		.align	1
+ 269              		.global	Button_Process
+ 270              		.syntax unified
+ 271              		.thumb
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 7
+
+
+ 272              		.thumb_func
+ 274              	Button_Process:
+ 275              	.LVL24:
+ 276              	.LFB2:
+  65:Core/Src/button_debouncer.c **** 
+  66:Core/Src/button_debouncer.c **** void Button_Process(Button_t* btn, uint8_t new_raw_state) {
+ 277              		.loc 1 66 59 is_stmt 1 view -0
+ 278              		.cfi_startproc
+ 279              		@ args = 0, pretend = 0, frame = 0
+ 280              		@ frame_needed = 0, uses_anonymous_args = 0
+  67:Core/Src/button_debouncer.c ****     if (!btn) return;
+ 281              		.loc 1 67 5 view .LVU58
+ 282              		.loc 1 67 8 is_stmt 0 view .LVU59
+ 283 0000 0028     		cmp	r0, #0
+ 284 0002 41D0     		beq	.L27
+  66:Core/Src/button_debouncer.c ****     if (!btn) return;
+ 285              		.loc 1 66 59 view .LVU60
+ 286 0004 08B5     		push	{r3, lr}
+ 287              	.LCFI9:
+ 288              		.cfi_def_cfa_offset 8
+ 289              		.cfi_offset 3, -8
+ 290              		.cfi_offset 14, -4
+ 291 0006 0346     		mov	r3, r0
+  68:Core/Src/button_debouncer.c **** 
+  69:Core/Src/button_debouncer.c ****     // 1. Update Raw State
+  70:Core/Src/button_debouncer.c ****     btn->raw_state = new_raw_state;
+ 292              		.loc 1 70 5 is_stmt 1 view .LVU61
+ 293              		.loc 1 70 20 is_stmt 0 view .LVU62
+ 294 0008 0174     		strb	r1, [r0, #16]
+  71:Core/Src/button_debouncer.c **** 
+  72:Core/Src/button_debouncer.c ****     // 2. Apply Low-Pass Filter (EMA)
+  73:Core/Src/button_debouncer.c ****     // The raw state (0 or 1) is the input to the filter
+  74:Core/Src/button_debouncer.c ****     float raw_float = (float)btn->raw_state;
+ 295              		.loc 1 74 5 is_stmt 1 view .LVU63
+ 296              		.loc 1 74 11 is_stmt 0 view .LVU64
+ 297 000a 07EE901A 		vmov	s15, r1	@ int
+ 298 000e F8EE677A 		vcvt.f32.u32	s15, s15
+ 299              	.LVL25:
+  75:Core/Src/button_debouncer.c ****     
+  76:Core/Src/button_debouncer.c ****     // EMA Formula: filtered = alpha * new_raw + (1 - alpha) * previous_filtered
+  77:Core/Src/button_debouncer.c ****     btn->filtered_value = btn->alpha * raw_float + (1.0f - btn->alpha) * btn->filtered_value;
+ 300              		.loc 1 77 5 is_stmt 1 view .LVU65
+ 301              		.loc 1 77 30 is_stmt 0 view .LVU66
+ 302 0012 D0ED016A 		vldr.32	s13, [r0, #4]
+ 303              		.loc 1 77 38 view .LVU67
+ 304 0016 66EEA77A 		vmul.f32	s15, s13, s15
+ 305              	.LVL26:
+ 306              		.loc 1 77 58 view .LVU68
+ 307 001a B7EE007A 		vmov.f32	s14, #1.0e+0
+ 308 001e 37EE667A 		vsub.f32	s14, s14, s13
+ 309              		.loc 1 77 77 view .LVU69
+ 310 0022 D0ED006A 		vldr.32	s13, [r0]
+ 311              		.loc 1 77 72 view .LVU70
+ 312 0026 27EE267A 		vmul.f32	s14, s14, s13
+ 313              		.loc 1 77 50 view .LVU71
+ 314 002a 77EE877A 		vadd.f32	s15, s15, s14
+ 315              		.loc 1 77 25 view .LVU72
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 8
+
+
+ 316 002e C0ED007A 		vstr.32	s15, [r0]
+  78:Core/Src/button_debouncer.c **** 
+  79:Core/Src/button_debouncer.c ****     // 3. Apply Hysteresis Trigger and Check for State Change
+  80:Core/Src/button_debouncer.c **** 
+  81:Core/Src/button_debouncer.c ****     uint8_t previous_stable_state = btn->stable_state;
+ 317              		.loc 1 81 5 is_stmt 1 view .LVU73
+ 318              		.loc 1 81 13 is_stmt 0 view .LVU74
+ 319 0032 427C     		ldrb	r2, [r0, #17]	@ zero_extendqisi2
+ 320              	.LVL27:
+  82:Core/Src/button_debouncer.c **** 
+  83:Core/Src/button_debouncer.c ****     if (btn->stable_state == 0) {
+ 321              		.loc 1 83 5 is_stmt 1 view .LVU75
+ 322              		.loc 1 83 8 is_stmt 0 view .LVU76
+ 323 0034 7AB9     		cbnz	r2, .L19
+  84:Core/Src/button_debouncer.c ****         // We are currently low/released. Look for a rise.
+  85:Core/Src/button_debouncer.c ****         if (btn->filtered_value >= btn->threshold_high) {
+ 324              		.loc 1 85 9 is_stmt 1 view .LVU77
+ 325              		.loc 1 85 39 is_stmt 0 view .LVU78
+ 326 0036 90ED027A 		vldr.32	s14, [r0, #8]
+ 327              		.loc 1 85 12 view .LVU79
+ 328 003a F4EEC77A 		vcmpe.f32	s15, s14
+ 329 003e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 330 0042 01DB     		blt	.L20
+  86:Core/Src/button_debouncer.c ****             btn->stable_state = 1; // Transition to high/pressed
+ 331              		.loc 1 86 13 is_stmt 1 view .LVU80
+ 332              		.loc 1 86 31 is_stmt 0 view .LVU81
+ 333 0044 0121     		movs	r1, #1
+ 334              	.LVL28:
+ 335              		.loc 1 86 31 view .LVU82
+ 336 0046 4174     		strb	r1, [r0, #17]
+ 337              	.L20:
+  87:Core/Src/button_debouncer.c ****         }
+  88:Core/Src/button_debouncer.c ****     } else { // stable_state == 1
+  89:Core/Src/button_debouncer.c ****         // We are currently high/pressed. Look for a fall.
+  90:Core/Src/button_debouncer.c ****         if (btn->filtered_value <= btn->threshold_low) {
+  91:Core/Src/button_debouncer.c ****             btn->stable_state = 0; // Transition to low/released
+  92:Core/Src/button_debouncer.c ****         }
+  93:Core/Src/button_debouncer.c ****     }
+  94:Core/Src/button_debouncer.c **** 
+  95:Core/Src/button_debouncer.c ****     // 4. Trigger Callbacks
+  96:Core/Src/button_debouncer.c ****     if (previous_stable_state == 0 && btn->stable_state == 1) {
+ 338              		.loc 1 96 5 is_stmt 1 view .LVU83
+ 339              		.loc 1 96 8 is_stmt 0 view .LVU84
+ 340 0048 12B9     		cbnz	r2, .L23
+ 341              		.loc 1 96 42 discriminator 1 view .LVU85
+ 342 004a 597C     		ldrb	r1, [r3, #17]	@ zero_extendqisi2
+ 343              		.loc 1 96 36 discriminator 1 view .LVU86
+ 344 004c 0129     		cmp	r1, #1
+ 345 004e 0CD0     		beq	.L30
+ 346              	.L23:
+  97:Core/Src/button_debouncer.c ****         // Rising Edge Detected
+  98:Core/Src/button_debouncer.c ****         if (btn->on_rise_cb) {
+  99:Core/Src/button_debouncer.c ****             btn->on_rise_cb(btn->cb_context);
+ 100:Core/Src/button_debouncer.c ****         }
+ 101:Core/Src/button_debouncer.c ****     } else if (previous_stable_state == 1 && btn->stable_state == 0) {
+ 347              		.loc 1 101 12 is_stmt 1 view .LVU87
+ 348              		.loc 1 101 15 is_stmt 0 view .LVU88
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 9
+
+
+ 349 0050 012A     		cmp	r2, #1
+ 350 0052 10D0     		beq	.L31
+ 351              	.LVL29:
+ 352              	.L17:
+ 102:Core/Src/button_debouncer.c ****         // Falling Edge Detected
+ 103:Core/Src/button_debouncer.c ****         if (btn->on_fall_cb) {
+ 104:Core/Src/button_debouncer.c ****             btn->on_fall_cb(btn->cb_context);
+ 105:Core/Src/button_debouncer.c ****         }
+ 106:Core/Src/button_debouncer.c ****     }
+ 107:Core/Src/button_debouncer.c **** }
+ 353              		.loc 1 107 1 view .LVU89
+ 354 0054 08BD     		pop	{r3, pc}
+ 355              	.LVL30:
+ 356              	.L19:
+  90:Core/Src/button_debouncer.c ****             btn->stable_state = 0; // Transition to low/released
+ 357              		.loc 1 90 9 is_stmt 1 view .LVU90
+  90:Core/Src/button_debouncer.c ****             btn->stable_state = 0; // Transition to low/released
+ 358              		.loc 1 90 39 is_stmt 0 view .LVU91
+ 359 0056 90ED037A 		vldr.32	s14, [r0, #12]
+  90:Core/Src/button_debouncer.c ****             btn->stable_state = 0; // Transition to low/released
+ 360              		.loc 1 90 12 view .LVU92
+ 361 005a F4EEC77A 		vcmpe.f32	s15, s14
+ 362 005e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 363 0062 F1D8     		bhi	.L20
+  91:Core/Src/button_debouncer.c ****         }
+ 364              		.loc 1 91 13 is_stmt 1 view .LVU93
+  91:Core/Src/button_debouncer.c ****         }
+ 365              		.loc 1 91 31 is_stmt 0 view .LVU94
+ 366 0064 0021     		movs	r1, #0
+ 367              	.LVL31:
+  91:Core/Src/button_debouncer.c ****         }
+ 368              		.loc 1 91 31 view .LVU95
+ 369 0066 4174     		strb	r1, [r0, #17]
+ 370 0068 EEE7     		b	.L20
+ 371              	.L30:
+  98:Core/Src/button_debouncer.c ****             btn->on_rise_cb(btn->cb_context);
+ 372              		.loc 1 98 9 is_stmt 1 view .LVU96
+  98:Core/Src/button_debouncer.c ****             btn->on_rise_cb(btn->cb_context);
+ 373              		.loc 1 98 16 is_stmt 0 view .LVU97
+ 374 006a 5A69     		ldr	r2, [r3, #20]
+ 375              	.LVL32:
+  98:Core/Src/button_debouncer.c ****             btn->on_rise_cb(btn->cb_context);
+ 376              		.loc 1 98 12 view .LVU98
+ 377 006c 002A     		cmp	r2, #0
+ 378 006e F1D0     		beq	.L17
+  99:Core/Src/button_debouncer.c ****         }
+ 379              		.loc 1 99 13 is_stmt 1 view .LVU99
+ 380 0070 D869     		ldr	r0, [r3, #28]
+ 381              	.LVL33:
+  99:Core/Src/button_debouncer.c ****         }
+ 382              		.loc 1 99 13 is_stmt 0 view .LVU100
+ 383 0072 9047     		blx	r2
+ 384              	.LVL34:
+  99:Core/Src/button_debouncer.c ****         }
+ 385              		.loc 1 99 13 view .LVU101
+ 386 0074 EEE7     		b	.L17
+ 387              	.LVL35:
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 10
+
+
+ 388              	.L31:
+ 101:Core/Src/button_debouncer.c ****         // Falling Edge Detected
+ 389              		.loc 1 101 49 discriminator 1 view .LVU102
+ 390 0076 5A7C     		ldrb	r2, [r3, #17]	@ zero_extendqisi2
+ 391              	.LVL36:
+ 101:Core/Src/button_debouncer.c ****         // Falling Edge Detected
+ 392              		.loc 1 101 43 discriminator 1 view .LVU103
+ 393 0078 002A     		cmp	r2, #0
+ 394 007a EBD1     		bne	.L17
+ 103:Core/Src/button_debouncer.c ****             btn->on_fall_cb(btn->cb_context);
+ 395              		.loc 1 103 9 is_stmt 1 view .LVU104
+ 103:Core/Src/button_debouncer.c ****             btn->on_fall_cb(btn->cb_context);
+ 396              		.loc 1 103 16 is_stmt 0 view .LVU105
+ 397 007c 9A69     		ldr	r2, [r3, #24]
+ 103:Core/Src/button_debouncer.c ****             btn->on_fall_cb(btn->cb_context);
+ 398              		.loc 1 103 12 view .LVU106
+ 399 007e 002A     		cmp	r2, #0
+ 400 0080 E8D0     		beq	.L17
+ 104:Core/Src/button_debouncer.c ****         }
+ 401              		.loc 1 104 13 is_stmt 1 view .LVU107
+ 402 0082 D869     		ldr	r0, [r3, #28]
+ 403              	.LVL37:
+ 104:Core/Src/button_debouncer.c ****         }
+ 404              		.loc 1 104 13 is_stmt 0 view .LVU108
+ 405 0084 9047     		blx	r2
+ 406              	.LVL38:
+ 104:Core/Src/button_debouncer.c ****         }
+ 407              		.loc 1 104 13 view .LVU109
+ 408 0086 E5E7     		b	.L17
+ 409              	.LVL39:
+ 410              	.L27:
+ 411              	.LCFI10:
+ 412              		.cfi_def_cfa_offset 0
+ 413              		.cfi_restore 3
+ 414              		.cfi_restore 14
+ 104:Core/Src/button_debouncer.c ****         }
+ 415              		.loc 1 104 13 view .LVU110
+ 416 0088 7047     		bx	lr
+ 417              		.cfi_endproc
+ 418              	.LFE2:
+ 420              		.section	.text.Button_SetRiseCallback,"ax",%progbits
+ 421              		.align	1
+ 422              		.global	Button_SetRiseCallback
+ 423              		.syntax unified
+ 424              		.thumb
+ 425              		.thumb_func
+ 427              	Button_SetRiseCallback:
+ 428              	.LVL40:
+ 429              	.LFB3:
+ 108:Core/Src/button_debouncer.c **** 
+ 109:Core/Src/button_debouncer.c **** void Button_SetRiseCallback(Button_t* btn, Button_Callback_t callback) {
+ 430              		.loc 1 109 72 is_stmt 1 view -0
+ 431              		.cfi_startproc
+ 432              		@ args = 0, pretend = 0, frame = 0
+ 433              		@ frame_needed = 0, uses_anonymous_args = 0
+ 434              		@ link register save eliminated.
+ 110:Core/Src/button_debouncer.c ****     if (btn) btn->on_rise_cb = callback;
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 11
+
+
+ 435              		.loc 1 110 5 view .LVU112
+ 436              		.loc 1 110 8 is_stmt 0 view .LVU113
+ 437 0000 00B1     		cbz	r0, .L32
+ 438              		.loc 1 110 14 is_stmt 1 discriminator 1 view .LVU114
+ 439              		.loc 1 110 30 is_stmt 0 discriminator 1 view .LVU115
+ 440 0002 4161     		str	r1, [r0, #20]
+ 441              	.L32:
+ 111:Core/Src/button_debouncer.c **** }
+ 442              		.loc 1 111 1 view .LVU116
+ 443 0004 7047     		bx	lr
+ 444              		.cfi_endproc
+ 445              	.LFE3:
+ 447              		.section	.text.Button_SetFallCallback,"ax",%progbits
+ 448              		.align	1
+ 449              		.global	Button_SetFallCallback
+ 450              		.syntax unified
+ 451              		.thumb
+ 452              		.thumb_func
+ 454              	Button_SetFallCallback:
+ 455              	.LVL41:
+ 456              	.LFB4:
+ 112:Core/Src/button_debouncer.c **** 
+ 113:Core/Src/button_debouncer.c **** void Button_SetFallCallback(Button_t* btn, Button_Callback_t callback) {
+ 457              		.loc 1 113 72 is_stmt 1 view -0
+ 458              		.cfi_startproc
+ 459              		@ args = 0, pretend = 0, frame = 0
+ 460              		@ frame_needed = 0, uses_anonymous_args = 0
+ 461              		@ link register save eliminated.
+ 114:Core/Src/button_debouncer.c ****     if (btn) btn->on_fall_cb = callback;
+ 462              		.loc 1 114 5 view .LVU118
+ 463              		.loc 1 114 8 is_stmt 0 view .LVU119
+ 464 0000 00B1     		cbz	r0, .L34
+ 465              		.loc 1 114 14 is_stmt 1 discriminator 1 view .LVU120
+ 466              		.loc 1 114 30 is_stmt 0 discriminator 1 view .LVU121
+ 467 0002 8161     		str	r1, [r0, #24]
+ 468              	.L34:
+ 115:Core/Src/button_debouncer.c **** }
+ 469              		.loc 1 115 1 view .LVU122
+ 470 0004 7047     		bx	lr
+ 471              		.cfi_endproc
+ 472              	.LFE4:
+ 474              		.section	.text.Button_SetContext,"ax",%progbits
+ 475              		.align	1
+ 476              		.global	Button_SetContext
+ 477              		.syntax unified
+ 478              		.thumb
+ 479              		.thumb_func
+ 481              	Button_SetContext:
+ 482              	.LVL42:
+ 483              	.LFB5:
+ 116:Core/Src/button_debouncer.c **** 
+ 117:Core/Src/button_debouncer.c **** void Button_SetContext(Button_t* btn, void* context) {
+ 484              		.loc 1 117 54 is_stmt 1 view -0
+ 485              		.cfi_startproc
+ 486              		@ args = 0, pretend = 0, frame = 0
+ 487              		@ frame_needed = 0, uses_anonymous_args = 0
+ 488              		@ link register save eliminated.
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 12
+
+
+ 118:Core/Src/button_debouncer.c ****     if (btn) btn->cb_context = context;
+ 489              		.loc 1 118 5 view .LVU124
+ 490              		.loc 1 118 8 is_stmt 0 view .LVU125
+ 491 0000 00B1     		cbz	r0, .L36
+ 492              		.loc 1 118 14 is_stmt 1 discriminator 1 view .LVU126
+ 493              		.loc 1 118 30 is_stmt 0 discriminator 1 view .LVU127
+ 494 0002 C161     		str	r1, [r0, #28]
+ 495              	.L36:
+ 119:Core/Src/button_debouncer.c **** }
+ 496              		.loc 1 119 1 view .LVU128
+ 497 0004 7047     		bx	lr
+ 498              		.cfi_endproc
+ 499              	.LFE5:
+ 501              		.section	.text.Button_GetStableState,"ax",%progbits
+ 502              		.align	1
+ 503              		.global	Button_GetStableState
+ 504              		.syntax unified
+ 505              		.thumb
+ 506              		.thumb_func
+ 508              	Button_GetStableState:
+ 509              	.LVL43:
+ 510              	.LFB6:
+ 120:Core/Src/button_debouncer.c **** 
+ 121:Core/Src/button_debouncer.c **** uint8_t Button_GetStableState(const Button_t* btn) {
+ 511              		.loc 1 121 52 is_stmt 1 view -0
+ 512              		.cfi_startproc
+ 513              		@ args = 0, pretend = 0, frame = 0
+ 514              		@ frame_needed = 0, uses_anonymous_args = 0
+ 515              		@ link register save eliminated.
+ 122:Core/Src/button_debouncer.c ****     return btn ? btn->stable_state : 0;
+ 516              		.loc 1 122 5 view .LVU130
+ 517              		.loc 1 122 36 is_stmt 0 view .LVU131
+ 518 0000 08B1     		cbz	r0, .L40
+ 519              		.loc 1 122 36 discriminator 1 view .LVU132
+ 520 0002 407C     		ldrb	r0, [r0, #17]	@ zero_extendqisi2
+ 521              	.LVL44:
+ 522              		.loc 1 122 36 discriminator 1 view .LVU133
+ 523 0004 7047     		bx	lr
+ 524              	.LVL45:
+ 525              	.L40:
+ 526              		.loc 1 122 36 discriminator 2 view .LVU134
+ 527 0006 0020     		movs	r0, #0
+ 528              	.LVL46:
+ 123:Core/Src/button_debouncer.c **** }
+ 529              		.loc 1 123 1 view .LVU135
+ 530 0008 7047     		bx	lr
+ 531              		.cfi_endproc
+ 532              	.LFE6:
+ 534              		.section	.text.Button_GetFilteredValue,"ax",%progbits
+ 535              		.align	1
+ 536              		.global	Button_GetFilteredValue
+ 537              		.syntax unified
+ 538              		.thumb
+ 539              		.thumb_func
+ 541              	Button_GetFilteredValue:
+ 542              	.LVL47:
+ 543              	.LFB7:
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 13
+
+
+ 124:Core/Src/button_debouncer.c **** 
+ 125:Core/Src/button_debouncer.c **** float Button_GetFilteredValue(const Button_t* btn) {
+ 544              		.loc 1 125 52 is_stmt 1 view -0
+ 545              		.cfi_startproc
+ 546              		@ args = 0, pretend = 0, frame = 0
+ 547              		@ frame_needed = 0, uses_anonymous_args = 0
+ 548              		@ link register save eliminated.
+ 126:Core/Src/button_debouncer.c ****     return btn ? btn->filtered_value : 0.0f;
+ 549              		.loc 1 126 5 view .LVU137
+ 550              		.loc 1 126 38 is_stmt 0 view .LVU138
+ 551 0000 10B1     		cbz	r0, .L43
+ 552              		.loc 1 126 38 discriminator 1 view .LVU139
+ 553 0002 90ED000A 		vldr.32	s0, [r0]
+ 554 0006 7047     		bx	lr
+ 555              	.L43:
+ 556              		.loc 1 126 38 discriminator 2 view .LVU140
+ 557 0008 9FED010A 		vldr.32	s0, .L44
+ 127:Core/Src/button_debouncer.c **** }...
+ 558              		.loc 1 127 1 view .LVU141
+ 559 000c 7047     		bx	lr
+ 560              	.L45:
+ 561 000e 00BF     		.align	2
+ 562              	.L44:
+ 563 0010 00000000 		.word	0
+ 564              		.cfi_endproc
+ 565              	.LFE7:
+ 567              		.text
+ 568              	.Letext0:
+ 569              		.file 2 "C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/machine/_default
+ 570              		.file 3 "C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/sys/_stdint.h"
+ 571              		.file 4 "Core/Inc/button_debouncer.h"
+ 572              		.file 5 "C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/math.h"
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s 			page 14
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 button_debouncer.c
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:25     .text.calculate_alpha:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:30     .text.calculate_alpha:00000000 calculate_alpha
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:95     .text.calculate_alpha:00000050 $d
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:103    .text.Button_Init:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:109    .text.Button_Init:00000000 Button_Init
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:268    .text.Button_Process:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:274    .text.Button_Process:00000000 Button_Process
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:421    .text.Button_SetRiseCallback:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:427    .text.Button_SetRiseCallback:00000000 Button_SetRiseCallback
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:448    .text.Button_SetFallCallback:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:454    .text.Button_SetFallCallback:00000000 Button_SetFallCallback
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:475    .text.Button_SetContext:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:481    .text.Button_SetContext:00000000 Button_SetContext
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:502    .text.Button_GetStableState:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:508    .text.Button_GetStableState:00000000 Button_GetStableState
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:535    .text.Button_GetFilteredValue:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:541    .text.Button_GetFilteredValue:00000000 Button_GetFilteredValue
+C:\Users\JV4K\AppData\Local\Temp\ccDkdsB7.s:563    .text.Button_GetFilteredValue:00000010 $d
+
+UNDEFINED SYMBOLS
+__aeabi_f2d
+__aeabi_dmul
+__aeabi_ddiv
+__aeabi_d2f
+expf

@@ -1,0 +1,1389 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-atexit.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (atexit)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (exit)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o) (__stdio_exit_handler)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o) (_fwalk_sglue)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o) (__sread)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (memset)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o) (_close_r)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o) (errno)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o) (_impure_ptr)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o) (_lseek_r)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o) (_read_r)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o) (_write_r)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+                              build_F407VE/syscalls.o (__errno)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (__libc_init_array)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (__libc_fini_array)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o) (__retarget_lock_init_recursive)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-atexit.o) (__register_exitproc)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o) (__call_exitprocs)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o) (_free_r)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o) (_malloc_r)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o) (__malloc_lock)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o) (_fflush_r)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o) (_sbrk_r)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+                              build_F407VE/button_debouncer.o (expf)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o) (finitef)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o) (__ieee754_expf)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o) (__math_uflowf)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+                              build_F407VE/button_debouncer.o (__aeabi_dmul)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                              build_F407VE/button_debouncer.o (__aeabi_f2d)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                              build_F407VE/button_debouncer.o (__aeabi_ddiv)
+C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+                              build_F407VE/button_debouncer.o (__aeabi_d2f)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .rodata.all_implied_fbits
+                0x00000000       0x24 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .data.__dso_handle
+                0x00000000        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text          0x00000000       0x70 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.extab     0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.exidx     0x00000000       0x10 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.attributes
+                0x00000000       0x20 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .text          0x00000000        0x0 build_F407VE/system_stm32f4xx.o
+ .data          0x00000000        0x0 build_F407VE/system_stm32f4xx.o
+ .bss           0x00000000        0x0 build_F407VE/system_stm32f4xx.o
+ .rodata.APBPrescTable
+                0x00000000        0x8 build_F407VE/system_stm32f4xx.o
+ .text          0x00000000        0x0 build_F407VE/syscalls.o
+ .data          0x00000000        0x0 build_F407VE/syscalls.o
+ .bss           0x00000000        0x0 build_F407VE/syscalls.o
+ .text.initialise_monitor_handles
+                0x00000000        0x2 build_F407VE/syscalls.o
+ .text._getpid  0x00000000        0x4 build_F407VE/syscalls.o
+ .text._kill    0x00000000       0x10 build_F407VE/syscalls.o
+ .text._exit    0x00000000        0xc build_F407VE/syscalls.o
+ .text._read    0x00000000       0x20 build_F407VE/syscalls.o
+ .text._write   0x00000000       0x1c build_F407VE/syscalls.o
+ .text._close   0x00000000        0x6 build_F407VE/syscalls.o
+ .text._fstat   0x00000000        0xa build_F407VE/syscalls.o
+ .text._isatty  0x00000000        0x4 build_F407VE/syscalls.o
+ .text._lseek   0x00000000        0x4 build_F407VE/syscalls.o
+ .text._open    0x00000000        0xa build_F407VE/syscalls.o
+ .text._wait    0x00000000       0x10 build_F407VE/syscalls.o
+ .text._unlink  0x00000000       0x10 build_F407VE/syscalls.o
+ .text._times   0x00000000        0x6 build_F407VE/syscalls.o
+ .text._stat    0x00000000        0xa build_F407VE/syscalls.o
+ .text._link    0x00000000       0x10 build_F407VE/syscalls.o
+ .text._fork    0x00000000       0x10 build_F407VE/syscalls.o
+ .text._execve  0x00000000       0x10 build_F407VE/syscalls.o
+ .data.environ  0x00000000        0x4 build_F407VE/syscalls.o
+ .bss.__env     0x00000000        0x4 build_F407VE/syscalls.o
+ .debug_info    0x00000000      0x848 build_F407VE/syscalls.o
+ .debug_abbrev  0x00000000      0x1e3 build_F407VE/syscalls.o
+ .debug_loc     0x00000000      0x583 build_F407VE/syscalls.o
+ .debug_aranges
+                0x00000000       0xa8 build_F407VE/syscalls.o
+ .debug_ranges  0x00000000       0x98 build_F407VE/syscalls.o
+ .debug_line    0x00000000      0x3e5 build_F407VE/syscalls.o
+ .debug_str     0x00000000      0x3e9 build_F407VE/syscalls.o
+ .comment       0x00000000       0x3a build_F407VE/syscalls.o
+ .debug_frame   0x00000000      0x190 build_F407VE/syscalls.o
+ .ARM.attributes
+                0x00000000       0x34 build_F407VE/syscalls.o
+ .text          0x00000000        0x0 build_F407VE/sysmem.o
+ .data          0x00000000        0x0 build_F407VE/sysmem.o
+ .bss           0x00000000        0x0 build_F407VE/sysmem.o
+ .text._sbrk    0x00000000       0x48 build_F407VE/sysmem.o
+ .bss.__sbrk_heap_end
+                0x00000000        0x4 build_F407VE/sysmem.o
+ .debug_info    0x00000000      0x18c build_F407VE/sysmem.o
+ .debug_abbrev  0x00000000       0xeb build_F407VE/sysmem.o
+ .debug_loc     0x00000000       0x90 build_F407VE/sysmem.o
+ .debug_aranges
+                0x00000000       0x20 build_F407VE/sysmem.o
+ .debug_ranges  0x00000000       0x10 build_F407VE/sysmem.o
+ .debug_line    0x00000000      0x1cf build_F407VE/sysmem.o
+ .debug_str     0x00000000      0x215 build_F407VE/sysmem.o
+ .comment       0x00000000       0x3a build_F407VE/sysmem.o
+ .debug_frame   0x00000000       0x28 build_F407VE/sysmem.o
+ .ARM.attributes
+                0x00000000       0x34 build_F407VE/sysmem.o
+ .text          0x00000000        0x0 build_F407VE/main.o
+ .data          0x00000000        0x0 build_F407VE/main.o
+ .bss           0x00000000        0x0 build_F407VE/main.o
+ .text          0x00000000        0x0 build_F407VE/gpio.o
+ .data          0x00000000        0x0 build_F407VE/gpio.o
+ .bss           0x00000000        0x0 build_F407VE/gpio.o
+ .text          0x00000000        0x0 build_F407VE/rcc.o
+ .data          0x00000000        0x0 build_F407VE/rcc.o
+ .bss           0x00000000        0x0 build_F407VE/rcc.o
+ .text          0x00000000        0x0 build_F407VE/systick.o
+ .data          0x00000000        0x0 build_F407VE/systick.o
+ .bss           0x00000000        0x0 build_F407VE/systick.o
+ .text          0x00000000        0x0 build_F407VE/button_debouncer.o
+ .data          0x00000000        0x0 build_F407VE/button_debouncer.o
+ .bss           0x00000000        0x0 build_F407VE/button_debouncer.o
+ .text.Button_SetFallCallback
+                0x00000000        0x6 build_F407VE/button_debouncer.o
+ .text.Button_GetStableState
+                0x00000000        0xa build_F407VE/button_debouncer.o
+ .text.Button_GetFilteredValue
+                0x00000000       0x14 build_F407VE/button_debouncer.o
+ .text          0x00000000       0x14 build_F407VE/startup_stm32f407xx.o
+ .data          0x00000000        0x0 build_F407VE/startup_stm32f407xx.o
+ .bss           0x00000000        0x0 build_F407VE/startup_stm32f407xx.o
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-atexit.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-atexit.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-atexit.o)
+ .text.atexit   0x00000000        0xc C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-atexit.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-atexit.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-atexit.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+ .text.exit     0x00000000       0x24 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .text.std      0x00000000       0x6c C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .text.stdio_exit_handler
+                0x00000000       0x18 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .text.cleanup_stdio
+                0x00000000       0x40 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .text.__fp_lock
+                0x00000000       0x18 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .text.__fp_unlock
+                0x00000000       0x18 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .text.global_stdio_init.part.0
+                0x00000000       0x3c C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .text.__sfp_lock_acquire
+                0x00000000        0xc C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .text.__sfp_lock_release
+                0x00000000        0xc C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .text.__sfp    0x00000000       0xa4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .text.__sinit  0x00000000       0x30 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .text.__fp_lock_all
+                0x00000000       0x1c C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .text.__fp_unlock_all
+                0x00000000       0x1c C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .data.__sglue  0x00000000        0xc C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .bss.__stdio_exit_handler
+                0x00000000        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
+ .text._fwalk_sglue
+                0x00000000       0x3c C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+ .text.__sread  0x00000000       0x22 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+ .text.__seofread
+                0x00000000        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+ .text.__swrite
+                0x00000000       0x38 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+ .text.__sseek  0x00000000       0x24 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+ .text.__sclose
+                0x00000000        0x8 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+ .text.memset   0x00000000       0x10 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
+ .text._close_r
+                0x00000000       0x20 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+ .text._reclaim_reent
+                0x00000000       0xac C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+ .bss.errno     0x00000000        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
+ .text._lseek_r
+                0x00000000       0x24 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
+ .text._read_r  0x00000000       0x24 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
+ .text._write_r
+                0x00000000       0x24 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
+ .text.__libc_fini_array
+                0x00000000       0x28 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .text.__retarget_lock_init
+                0x00000000        0x2 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .text.__retarget_lock_init_recursive
+                0x00000000        0x2 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .text.__retarget_lock_close
+                0x00000000        0x2 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .text.__retarget_lock_close_recursive
+                0x00000000        0x2 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .text.__retarget_lock_acquire
+                0x00000000        0x2 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .text.__retarget_lock_acquire_recursive
+                0x00000000        0x2 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .text.__retarget_lock_try_acquire
+                0x00000000        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .text.__retarget_lock_try_acquire_recursive
+                0x00000000        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .text.__retarget_lock_release
+                0x00000000        0x2 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .text.__retarget_lock_release_recursive
+                0x00000000        0x2 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .bss.__lock___arc4random_mutex
+                0x00000000        0x1 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .bss.__lock___dd_hash_mutex
+                0x00000000        0x1 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .bss.__lock___tz_mutex
+                0x00000000        0x1 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .bss.__lock___env_recursive_mutex
+                0x00000000        0x1 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .bss.__lock___malloc_recursive_mutex
+                0x00000000        0x1 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .bss.__lock___at_quick_exit_mutex
+                0x00000000        0x1 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .bss.__lock___atexit_recursive_mutex
+                0x00000000        0x1 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .bss.__lock___sfp_recursive_mutex
+                0x00000000        0x1 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+ .text.__register_exitproc
+                0x00000000       0xb8 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+ .bss.__atexit0
+                0x00000000       0x8c C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+ .data.__atexit_dummy
+                0x00000000        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x00000000       0xbc C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+ .bss.__atexit  0x00000000        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+ .data.__atexit_recursive_mutex
+                0x00000000        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+ .text._free_r  0x00000000       0x94 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+ .text.sbrk_aligned
+                0x00000000       0x44 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+ .text._malloc_r
+                0x00000000      0x100 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+ .bss.__malloc_sbrk_start
+                0x00000000        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+ .bss.__malloc_free_list
+                0x00000000        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+ .text.__malloc_lock
+                0x00000000        0xc C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+ .text.__malloc_unlock
+                0x00000000        0xc C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+ .text.__sflush_r
+                0x00000000      0x108 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+ .text._fflush_r
+                0x00000000       0x50 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+ .text.fflush   0x00000000       0x28 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+ .text._sbrk_r  0x00000000       0x20 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .text.__math_divzerof
+                0x00000000       0x24 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .text.__math_invalidf
+                0x00000000       0x20 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .text          0x00000000      0x254 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_line    0x00000000       0xf5 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_line_str
+                0x00000000      0x117 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_info    0x00000000       0x3f C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_abbrev  0x00000000       0x26 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_aranges
+                0x00000000       0x20 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_str     0x00000000      0x13b C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_frame   0x00000000       0x30 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .ARM.attributes
+                0x00000000       0x22 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .rodata.all_implied_fbits
+                0x00000000       0x24 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .eh_frame      0x00000000        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .comment       0x00000000       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .ARM.attributes
+                0x00000000       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .text          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+ .data          0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+ .bss           0x00000000        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x20000000         0x00020000         xrw
+CCMRAM           0x10000000         0x00010000         xrw
+FLASH            0x08000000         0x00080000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+LOAD build_F407VE/system_stm32f4xx.o
+LOAD build_F407VE/syscalls.o
+LOAD build_F407VE/sysmem.o
+LOAD build_F407VE/main.o
+LOAD build_F407VE/gpio.o
+LOAD build_F407VE/rcc.o
+LOAD build_F407VE/systick.o
+LOAD build_F407VE/button_debouncer.o
+LOAD build_F407VE/startup_stm32f407xx.o
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a
+START GROUP
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+END GROUP
+START GROUP
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+END GROUP
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+                0x20020000                        _estack = 0x20020000
+                0x00000200                        _Min_Heap_Size = 0x200
+                0x00000400                        _Min_Stack_Size = 0x400
+
+.isr_vector     0x08000000      0x188
+                0x08000000                        . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x188 build_F407VE/startup_stm32f407xx.o
+                0x08000000                g_pfnVectors
+                0x08000188                        . = ALIGN (0x4)
+
+.text           0x08000188     0x11d0
+                0x08000188                        . = ALIGN (0x4)
+ *(.text)
+ .text          0x08000188      0x378 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                0x08000188                __aeabi_drsub
+                0x08000190                __aeabi_dsub
+                0x08000190                __subdf3
+                0x08000194                __aeabi_dadd
+                0x08000194                __adddf3
+                0x0800040c                __floatunsidf
+                0x0800040c                __aeabi_ui2d
+                0x0800042c                __floatsidf
+                0x0800042c                __aeabi_i2d
+                0x08000450                __aeabi_f2d
+                0x08000450                __extendsfdf2
+                0x08000494                __floatundidf
+                0x08000494                __aeabi_ul2d
+                0x080004a4                __floatdidf
+                0x080004a4                __aeabi_l2d
+ .text          0x08000500      0x424 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                0x08000500                __aeabi_dmul
+                0x08000500                __muldf3
+                0x08000754                __divdf3
+                0x08000754                __aeabi_ddiv
+ .text          0x08000924       0xa0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+                0x08000924                __truncdfsf2
+                0x08000924                __aeabi_d2f
+ *(.text*)
+ .text.__do_global_dtors_aux
+                0x080009c4       0x24 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text.frame_dummy
+                0x080009e8       0x1c C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text.SystemInit
+                0x08000a04       0x14 build_F407VE/system_stm32f4xx.o
+                0x08000a04                SystemInit
+ .text.SystemCoreClockUpdate
+                0x08000a18       0xa0 build_F407VE/system_stm32f4xx.o
+                0x08000a18                SystemCoreClockUpdate
+ .text.update_leds
+                0x08000ab8       0x94 build_F407VE/main.o
+                0x08000ab8                update_leds
+ .text.on_button1_rise
+                0x08000b4c       0x24 build_F407VE/main.o
+                0x08000b4c                on_button1_rise
+ .text.on_button2_rise
+                0x08000b70       0x34 build_F407VE/main.o
+                0x08000b70                on_button2_rise
+ .text.main     0x08000ba4       0xa0 build_F407VE/main.o
+                0x08000ba4                main
+ .text.SysTick_Handler
+                0x08000c44       0x40 build_F407VE/main.o
+                0x08000c44                SysTick_Handler
+ .text.GPIOA_Init_Direct
+                0x08000c84       0x4c build_F407VE/gpio.o
+                0x08000c84                GPIOA_Init_Direct
+ .text.GPIOB_Init_Macro
+                0x08000cd0       0x64 build_F407VE/gpio.o
+                0x08000cd0                GPIOB_Init_Macro
+ .text.GPIOC_Init_CMSIS
+                0x08000d34       0x58 build_F407VE/gpio.o
+                0x08000d34                GPIOC_Init_CMSIS
+ .text.SystemClock_Config
+                0x08000d8c       0x74 build_F407VE/rcc.o
+                0x08000d8c                SystemClock_Config
+ .text.SysTick_Init
+                0x08000e00       0x44 build_F407VE/systick.o
+                0x08000e00                SysTick_Init
+ *fill*         0x08000e44        0x4 
+ .text.calculate_alpha
+                0x08000e48       0x60 build_F407VE/button_debouncer.o
+ .text.Button_Init
+                0x08000ea8       0x92 build_F407VE/button_debouncer.o
+                0x08000ea8                Button_Init
+ .text.Button_Process
+                0x08000f3a       0x8a build_F407VE/button_debouncer.o
+                0x08000f3a                Button_Process
+ .text.Button_SetRiseCallback
+                0x08000fc4        0x6 build_F407VE/button_debouncer.o
+                0x08000fc4                Button_SetRiseCallback
+ .text.Button_SetContext
+                0x08000fca        0x6 build_F407VE/button_debouncer.o
+                0x08000fca                Button_SetContext
+ .text.Reset_Handler
+                0x08000fd0       0x50 build_F407VE/startup_stm32f407xx.o
+                0x08000fd0                Reset_Handler
+ .text.Default_Handler
+                0x08001020        0x2 build_F407VE/startup_stm32f407xx.o
+                0x08001020                RTC_Alarm_IRQHandler
+                0x08001020                HASH_RNG_IRQHandler
+                0x08001020                EXTI2_IRQHandler
+                0x08001020                TIM8_CC_IRQHandler
+                0x08001020                DebugMon_Handler
+                0x08001020                TIM1_CC_IRQHandler
+                0x08001020                DMA2_Stream5_IRQHandler
+                0x08001020                HardFault_Handler
+                0x08001020                DMA1_Stream5_IRQHandler
+                0x08001020                PVD_IRQHandler
+                0x08001020                SDIO_IRQHandler
+                0x08001020                TAMP_STAMP_IRQHandler
+                0x08001020                PendSV_Handler
+                0x08001020                NMI_Handler
+                0x08001020                CAN2_RX1_IRQHandler
+                0x08001020                EXTI3_IRQHandler
+                0x08001020                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08001020                TIM1_UP_TIM10_IRQHandler
+                0x08001020                TIM8_UP_TIM13_IRQHandler
+                0x08001020                I2C3_ER_IRQHandler
+                0x08001020                EXTI0_IRQHandler
+                0x08001020                I2C2_EV_IRQHandler
+                0x08001020                DMA1_Stream2_IRQHandler
+                0x08001020                CAN1_RX0_IRQHandler
+                0x08001020                FPU_IRQHandler
+                0x08001020                OTG_HS_WKUP_IRQHandler
+                0x08001020                UsageFault_Handler
+                0x08001020                CAN2_SCE_IRQHandler
+                0x08001020                DMA2_Stream2_IRQHandler
+                0x08001020                SPI1_IRQHandler
+                0x08001020                TIM6_DAC_IRQHandler
+                0x08001020                TIM1_BRK_TIM9_IRQHandler
+                0x08001020                DCMI_IRQHandler
+                0x08001020                CAN2_RX0_IRQHandler
+                0x08001020                DMA2_Stream3_IRQHandler
+                0x08001020                USART6_IRQHandler
+                0x08001020                USART3_IRQHandler
+                0x08001020                CAN1_RX1_IRQHandler
+                0x08001020                UART5_IRQHandler
+                0x08001020                DMA2_Stream0_IRQHandler
+                0x08001020                TIM4_IRQHandler
+                0x08001020                I2C1_EV_IRQHandler
+                0x08001020                DMA1_Stream6_IRQHandler
+                0x08001020                DMA1_Stream1_IRQHandler
+                0x08001020                UART4_IRQHandler
+                0x08001020                TIM3_IRQHandler
+                0x08001020                RCC_IRQHandler
+                0x08001020                TIM8_BRK_TIM12_IRQHandler
+                0x08001020                Default_Handler
+                0x08001020                EXTI15_10_IRQHandler
+                0x08001020                ADC_IRQHandler
+                0x08001020                DMA1_Stream7_IRQHandler
+                0x08001020                TIM7_IRQHandler
+                0x08001020                CAN2_TX_IRQHandler
+                0x08001020                TIM5_IRQHandler
+                0x08001020                DMA2_Stream7_IRQHandler
+                0x08001020                I2C3_EV_IRQHandler
+                0x08001020                EXTI9_5_IRQHandler
+                0x08001020                RTC_WKUP_IRQHandler
+                0x08001020                ETH_WKUP_IRQHandler
+                0x08001020                SPI2_IRQHandler
+                0x08001020                OTG_HS_EP1_IN_IRQHandler
+                0x08001020                MemManage_Handler
+                0x08001020                DMA1_Stream0_IRQHandler
+                0x08001020                CAN1_TX_IRQHandler
+                0x08001020                SVC_Handler
+                0x08001020                EXTI4_IRQHandler
+                0x08001020                FSMC_IRQHandler
+                0x08001020                ETH_IRQHandler
+                0x08001020                OTG_HS_EP1_OUT_IRQHandler
+                0x08001020                WWDG_IRQHandler
+                0x08001020                TIM2_IRQHandler
+                0x08001020                OTG_FS_WKUP_IRQHandler
+                0x08001020                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08001020                OTG_HS_IRQHandler
+                0x08001020                EXTI1_IRQHandler
+                0x08001020                USART2_IRQHandler
+                0x08001020                I2C2_ER_IRQHandler
+                0x08001020                DMA2_Stream1_IRQHandler
+                0x08001020                CAN1_SCE_IRQHandler
+                0x08001020                FLASH_IRQHandler
+                0x08001020                DMA2_Stream4_IRQHandler
+                0x08001020                BusFault_Handler
+                0x08001020                USART1_IRQHandler
+                0x08001020                OTG_FS_IRQHandler
+                0x08001020                SPI3_IRQHandler
+                0x08001020                DMA1_Stream4_IRQHandler
+                0x08001020                I2C1_ER_IRQHandler
+                0x08001020                DMA2_Stream6_IRQHandler
+                0x08001020                DMA1_Stream3_IRQHandler
+ *fill*         0x08001022        0x2 
+ .text.__errno  0x08001024        0xc C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+                0x08001024                __errno
+ .text.__libc_init_array
+                0x08001030       0x48 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+                0x08001030                __libc_init_array
+ .text.expf     0x08001078       0x78 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+                0x08001078                expf
+ .text.finitef  0x080010f0       0x14 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+                0x080010f0                finitef
+ .text.__ieee754_expf
+                0x08001104      0x1e8 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+                0x08001104                __ieee754_expf
+ .text.with_errnof
+                0x080012ec       0x1c C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .text.xflowf   0x08001308       0x20 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .text.__math_uflowf
+                0x08001328        0xc C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+                0x08001328                __math_uflowf
+ .text.__math_oflowf
+                0x08001334        0xc C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+                0x08001334                __math_oflowf
+ *(.glue_7)
+ .glue_7        0x08001340        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x08001340        0x0 linker stubs
+ *(.eh_frame)
+ .eh_frame      0x08001340        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *(.init)
+ .init          0x08001340        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
+                0x08001340                _init
+ .init          0x08001344        0x8 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+ *(.fini)
+ .fini          0x0800134c        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
+                0x0800134c                _fini
+ .fini          0x08001350        0x8 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08001358                        . = ALIGN (0x4)
+                0x08001358                        _etext = .
+
+.vfp11_veneer   0x08001358        0x0
+ .vfp11_veneer  0x08001358        0x0 linker stubs
+
+.v4_bx          0x08001358        0x0
+ .v4_bx         0x08001358        0x0 linker stubs
+
+.iplt           0x08001358        0x0
+ .iplt          0x08001358        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.rodata         0x08001358       0x40
+                0x08001358                        . = ALIGN (0x4)
+ *(.rodata)
+ .rodata        0x08001358       0x18 build_F407VE/main.o
+ *(.rodata*)
+ .rodata.AHBPrescTable
+                0x08001370       0x10 build_F407VE/system_stm32f4xx.o
+                0x08001370                AHBPrescTable
+ .rodata.ln2LO  0x08001380        0x8 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+ .rodata.ln2HI  0x08001388        0x8 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+ .rodata.halF   0x08001390        0x8 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+                0x08001398                        . = ALIGN (0x4)
+
+.rel.dyn        0x08001398        0x0
+ .rel.iplt      0x08001398        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x08001398        0x0
+                0x08001398                        __exidx_start = .
+ *(.ARM.exidx*)
+                0x08001398                        __exidx_end = .
+
+.preinit_array  0x08001398        0x0
+                0x08001398                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array*)
+                0x08001398                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x08001398        0x4
+                0x08001398                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array*)
+ .init_array    0x08001398        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x0800139c                        PROVIDE (__init_array_end = .)
+
+.fini_array     0x0800139c        0x4
+                0x0800139c                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x0800139c        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x080013a0                        PROVIDE (__fini_array_end = .)
+                0x080013a0                        _sidata = LOADADDR (.data)
+
+.data           0x20000000       0x58 load address 0x080013a0
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _sdata = .
+ *(.data)
+ *(.data*)
+ .data.SystemCoreClock
+                0x20000000        0x4 build_F407VE/system_stm32f4xx.o
+                0x20000000                SystemCoreClock
+ .data.active_led_count
+                0x20000004        0x1 build_F407VE/main.o
+                0x20000004                active_led_count
+ *fill*         0x20000005        0x3 
+ .data._impure_ptr
+                0x20000008        0x4 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+                0x20000008                _impure_ptr
+ .data._impure_data
+                0x2000000c       0x4c C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+                0x2000000c                _impure_data
+                0x20000058                        . = ALIGN (0x4)
+                0x20000058                        _edata = .
+                0x080013f8                        _siccmram = LOADADDR (.ccmram)
+
+.igot.plt       0x20000058        0x0 load address 0x080013f8
+ .igot.plt      0x20000058        0x0 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.ccmram         0x10000000        0x0 load address 0x080013f8
+                0x10000000                        . = ALIGN (0x4)
+                0x10000000                        _sccmram = .
+ *(.ccmram)
+ *(.ccmram*)
+                0x10000000                        . = ALIGN (0x4)
+                0x10000000                        _eccmram = .
+                0x10000000                        . = ALIGN (0x4)
+
+.bss            0x20000058      0x1a0
+                0x20000058                        _sbss = .
+                0x20000058                        __bss_start__ = _sbss
+ *(.bss)
+ *(.bss*)
+ .bss.completed.1
+                0x20000058        0x1 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *fill*         0x20000059        0x3 
+ .bss.object.0  0x2000005c       0x18 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss.current_led_index
+                0x20000074        0x1 build_F407VE/main.o
+                0x20000074                current_led_index
+ *fill*         0x20000075        0x3 
+ .bss.btn2_count
+                0x20000078       0x20 build_F407VE/main.o
+                0x20000078                btn2_count
+ .bss.btn1_sequence
+                0x20000098       0x20 build_F407VE/main.o
+                0x20000098                btn1_sequence
+ .bss.millis    0x200000b8        0x8 build_F407VE/main.o
+                0x200000b8                millis
+ .bss.__sf      0x200000c0      0x138 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                0x200000c0                __sf
+ *(COMMON)
+                0x200001f8                        . = ALIGN (0x4)
+                0x200001f8                        _ebss = .
+                0x200001f8                        __bss_end__ = _ebss
+
+._user_heap_stack
+                0x200001f8      0x600
+                0x200001f8                        . = ALIGN (0x8)
+                [!provide]                        PROVIDE (end = .)
+                0x200001f8                        PROVIDE (_end = .)
+                0x200003f8                        . = (. + _Min_Heap_Size)
+ *fill*         0x200001f8      0x200 
+                0x200007f8                        . = (. + _Min_Stack_Size)
+ *fill*         0x200003f8      0x400 
+                0x200007f8                        . = ALIGN (0x8)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x00000000       0x30
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x22 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
+ .ARM.attributes
+                0x00000022       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x00000056       0x34 build_F407VE/system_stm32f4xx.o
+ .ARM.attributes
+                0x0000008a       0x34 build_F407VE/main.o
+ .ARM.attributes
+                0x000000be       0x34 build_F407VE/gpio.o
+ .ARM.attributes
+                0x000000f2       0x34 build_F407VE/rcc.o
+ .ARM.attributes
+                0x00000126       0x34 build_F407VE/systick.o
+ .ARM.attributes
+                0x0000015a       0x34 build_F407VE/button_debouncer.o
+ .ARM.attributes
+                0x0000018e       0x21 build_F407VE/startup_stm32f407xx.o
+ .ARM.attributes
+                0x000001af       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .ARM.attributes
+                0x000001e3       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+ .ARM.attributes
+                0x00000217       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+ .ARM.attributes
+                0x0000024b       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+ .ARM.attributes
+                0x0000027f       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+ .ARM.attributes
+                0x000002b3       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+ .ARM.attributes
+                0x000002e7       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+ .ARM.attributes
+                0x0000031b       0x34 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .ARM.attributes
+                0x0000034f       0x22 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000371       0x22 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000393       0x22 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x000003b5       0x22 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+OUTPUT(build_F407VE/STM32F407VE.elf elf32-littlearm)
+LOAD linker stubs
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
+LOAD C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a
+
+.comment        0x00000000       0x39
+ .comment       0x00000000       0x39 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                                 0x3a (size before relaxing)
+ .comment       0x00000039       0x3a build_F407VE/system_stm32f4xx.o
+ .comment       0x00000039       0x3a build_F407VE/main.o
+ .comment       0x00000039       0x3a build_F407VE/gpio.o
+ .comment       0x00000039       0x3a build_F407VE/rcc.o
+ .comment       0x00000039       0x3a build_F407VE/systick.o
+ .comment       0x00000039       0x3a build_F407VE/button_debouncer.o
+ .comment       0x00000039       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .comment       0x00000039       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+ .comment       0x00000039       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+ .comment       0x00000039       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+ .comment       0x00000039       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+ .comment       0x00000039       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+ .comment       0x00000039       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+ .comment       0x00000039       0x3a C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+
+.debug_info     0x00000000     0x2040
+ .debug_info    0x00000000      0x5ac build_F407VE/system_stm32f4xx.o
+ .debug_info    0x000005ac      0x65b build_F407VE/main.o
+ .debug_info    0x00000c07      0x395 build_F407VE/gpio.o
+ .debug_info    0x00000f9c      0x348 build_F407VE/rcc.o
+ .debug_info    0x000012e4      0x73e build_F407VE/systick.o
+ .debug_info    0x00001a22      0x485 build_F407VE/button_debouncer.o
+ .debug_info    0x00001ea7       0x30 build_F407VE/startup_stm32f407xx.o
+ .debug_info    0x00001ed7       0xd3 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x00001faa       0x57 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x00002001       0x3f C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+
+.debug_abbrev   0x00000000      0x891
+ .debug_abbrev  0x00000000      0x11b build_F407VE/system_stm32f4xx.o
+ .debug_abbrev  0x0000011b      0x226 build_F407VE/main.o
+ .debug_abbrev  0x00000341       0xae build_F407VE/gpio.o
+ .debug_abbrev  0x000003ef       0xcc build_F407VE/rcc.o
+ .debug_abbrev  0x000004bb      0x174 build_F407VE/systick.o
+ .debug_abbrev  0x0000062f      0x1cd build_F407VE/button_debouncer.o
+ .debug_abbrev  0x000007fc       0x1d build_F407VE/startup_stm32f407xx.o
+ .debug_abbrev  0x00000819       0x28 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x00000841       0x28 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x00000869       0x28 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+
+.debug_loc      0x00000000      0x98e
+ .debug_loc     0x00000000      0x181 build_F407VE/system_stm32f4xx.o
+ .debug_loc     0x00000181      0x1cf build_F407VE/main.o
+ .debug_loc     0x00000350       0x20 build_F407VE/rcc.o
+ .debug_loc     0x00000370       0x63 build_F407VE/systick.o
+ .debug_loc     0x000003d3      0x5bb build_F407VE/button_debouncer.o
+
+.debug_aranges  0x00000000      0x1b8
+ .debug_aranges
+                0x00000000       0x28 build_F407VE/system_stm32f4xx.o
+ .debug_aranges
+                0x00000028       0x40 build_F407VE/main.o
+ .debug_aranges
+                0x00000068       0x30 build_F407VE/gpio.o
+ .debug_aranges
+                0x00000098       0x20 build_F407VE/rcc.o
+ .debug_aranges
+                0x000000b8       0x20 build_F407VE/systick.o
+ .debug_aranges
+                0x000000d8       0x58 build_F407VE/button_debouncer.o
+ .debug_aranges
+                0x00000130       0x28 build_F407VE/startup_stm32f407xx.o
+ .debug_aranges
+                0x00000158       0x20 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_aranges
+                0x00000178       0x20 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_aranges
+                0x00000198       0x20 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+
+.debug_ranges   0x00000000       0xf0
+ .debug_ranges  0x00000000       0x18 build_F407VE/system_stm32f4xx.o
+ .debug_ranges  0x00000018       0x30 build_F407VE/main.o
+ .debug_ranges  0x00000048       0x20 build_F407VE/gpio.o
+ .debug_ranges  0x00000068       0x10 build_F407VE/rcc.o
+ .debug_ranges  0x00000078       0x10 build_F407VE/systick.o
+ .debug_ranges  0x00000088       0x48 build_F407VE/button_debouncer.o
+ .debug_ranges  0x000000d0       0x20 build_F407VE/startup_stm32f407xx.o
+
+.debug_line     0x00000000     0x12e1
+ .debug_line    0x00000000      0x277 build_F407VE/system_stm32f4xx.o
+ .debug_line    0x00000277      0x281 build_F407VE/main.o
+ .debug_line    0x000004f8      0x1e4 build_F407VE/gpio.o
+ .debug_line    0x000006dc      0x216 build_F407VE/rcc.o
+ .debug_line    0x000008f2      0x1f3 build_F407VE/systick.o
+ .debug_line    0x00000ae5      0x409 build_F407VE/button_debouncer.o
+ .debug_line    0x00000eee       0x8a build_F407VE/startup_stm32f407xx.o
+ .debug_line    0x00000f78      0x16f C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x000010e7      0x184 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x0000126b       0x76 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+
+.debug_str      0x00000000      0xe61
+ .debug_str     0x00000000      0xe61 build_F407VE/system_stm32f4xx.o
+                                0x363 (size before relaxing)
+ .debug_str     0x00000e61      0x3f4 build_F407VE/main.o
+ .debug_str     0x00000e61      0x2dc build_F407VE/gpio.o
+ .debug_str     0x00000e61      0x2c6 build_F407VE/rcc.o
+ .debug_str     0x00000e61      0x7c0 build_F407VE/systick.o
+ .debug_str     0x00000e61      0x38e build_F407VE/button_debouncer.o
+ .debug_str     0x00000e61       0x80 build_F407VE/startup_stm32f407xx.o
+ .debug_str     0x00000e61      0x1d1 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_str     0x00000e61      0x151 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_str     0x00000e61      0x13e C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+
+.debug_frame    0x00000000      0x35c
+ .debug_frame   0x00000000       0x30 build_F407VE/system_stm32f4xx.o
+ .debug_frame   0x00000030       0x90 build_F407VE/main.o
+ .debug_frame   0x000000c0       0x40 build_F407VE/gpio.o
+ .debug_frame   0x00000100       0x28 build_F407VE/rcc.o
+ .debug_frame   0x00000128       0x20 build_F407VE/systick.o
+ .debug_frame   0x00000148       0xf4 build_F407VE/button_debouncer.o
+ .debug_frame   0x0000023c       0xac C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x000002e8       0x50 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00000338       0x24 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+
+.debug_line_str
+                0x00000000      0x117
+ .debug_line_str
+                0x00000000      0x117 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_line_str
+                0x00000117      0x117 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_line_str
+                0x00000117      0x117 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC_IRQHandler                                    build_F407VE/startup_stm32f407xx.o
+AHBPrescTable                                     build_F407VE/system_stm32f4xx.o
+APBPrescTable                                     build_F407VE/system_stm32f4xx.o
+BusFault_Handler                                  build_F407VE/startup_stm32f407xx.o
+Button_GetFilteredValue                           build_F407VE/button_debouncer.o
+Button_GetStableState                             build_F407VE/button_debouncer.o
+Button_Init                                       build_F407VE/button_debouncer.o
+                                                  build_F407VE/main.o
+Button_Process                                    build_F407VE/button_debouncer.o
+                                                  build_F407VE/main.o
+Button_SetContext                                 build_F407VE/button_debouncer.o
+                                                  build_F407VE/main.o
+Button_SetFallCallback                            build_F407VE/button_debouncer.o
+Button_SetRiseCallback                            build_F407VE/button_debouncer.o
+                                                  build_F407VE/main.o
+CAN1_RX0_IRQHandler                               build_F407VE/startup_stm32f407xx.o
+CAN1_RX1_IRQHandler                               build_F407VE/startup_stm32f407xx.o
+CAN1_SCE_IRQHandler                               build_F407VE/startup_stm32f407xx.o
+CAN1_TX_IRQHandler                                build_F407VE/startup_stm32f407xx.o
+CAN2_RX0_IRQHandler                               build_F407VE/startup_stm32f407xx.o
+CAN2_RX1_IRQHandler                               build_F407VE/startup_stm32f407xx.o
+CAN2_SCE_IRQHandler                               build_F407VE/startup_stm32f407xx.o
+CAN2_TX_IRQHandler                                build_F407VE/startup_stm32f407xx.o
+DCMI_IRQHandler                                   build_F407VE/startup_stm32f407xx.o
+DMA1_Stream0_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA1_Stream1_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA1_Stream2_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA1_Stream3_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA1_Stream4_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA1_Stream5_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA1_Stream6_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA1_Stream7_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA2_Stream0_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA2_Stream1_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA2_Stream2_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA2_Stream3_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA2_Stream4_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA2_Stream5_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA2_Stream6_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DMA2_Stream7_IRQHandler                           build_F407VE/startup_stm32f407xx.o
+DebugMon_Handler                                  build_F407VE/startup_stm32f407xx.o
+Default_Handler                                   build_F407VE/startup_stm32f407xx.o
+ETH_IRQHandler                                    build_F407VE/startup_stm32f407xx.o
+ETH_WKUP_IRQHandler                               build_F407VE/startup_stm32f407xx.o
+EXTI0_IRQHandler                                  build_F407VE/startup_stm32f407xx.o
+EXTI15_10_IRQHandler                              build_F407VE/startup_stm32f407xx.o
+EXTI1_IRQHandler                                  build_F407VE/startup_stm32f407xx.o
+EXTI2_IRQHandler                                  build_F407VE/startup_stm32f407xx.o
+EXTI3_IRQHandler                                  build_F407VE/startup_stm32f407xx.o
+EXTI4_IRQHandler                                  build_F407VE/startup_stm32f407xx.o
+EXTI9_5_IRQHandler                                build_F407VE/startup_stm32f407xx.o
+FLASH_IRQHandler                                  build_F407VE/startup_stm32f407xx.o
+FPU_IRQHandler                                    build_F407VE/startup_stm32f407xx.o
+FSMC_IRQHandler                                   build_F407VE/startup_stm32f407xx.o
+GPIOA_Init_Direct                                 build_F407VE/gpio.o
+                                                  build_F407VE/main.o
+GPIOB_Init_Macro                                  build_F407VE/gpio.o
+                                                  build_F407VE/main.o
+GPIOC_Init_CMSIS                                  build_F407VE/gpio.o
+                                                  build_F407VE/main.o
+HASH_RNG_IRQHandler                               build_F407VE/startup_stm32f407xx.o
+HardFault_Handler                                 build_F407VE/startup_stm32f407xx.o
+I2C1_ER_IRQHandler                                build_F407VE/startup_stm32f407xx.o
+I2C1_EV_IRQHandler                                build_F407VE/startup_stm32f407xx.o
+I2C2_ER_IRQHandler                                build_F407VE/startup_stm32f407xx.o
+I2C2_EV_IRQHandler                                build_F407VE/startup_stm32f407xx.o
+I2C3_ER_IRQHandler                                build_F407VE/startup_stm32f407xx.o
+I2C3_EV_IRQHandler                                build_F407VE/startup_stm32f407xx.o
+MemManage_Handler                                 build_F407VE/startup_stm32f407xx.o
+NMI_Handler                                       build_F407VE/startup_stm32f407xx.o
+OTG_FS_IRQHandler                                 build_F407VE/startup_stm32f407xx.o
+OTG_FS_WKUP_IRQHandler                            build_F407VE/startup_stm32f407xx.o
+OTG_HS_EP1_IN_IRQHandler                          build_F407VE/startup_stm32f407xx.o
+OTG_HS_EP1_OUT_IRQHandler                         build_F407VE/startup_stm32f407xx.o
+OTG_HS_IRQHandler                                 build_F407VE/startup_stm32f407xx.o
+OTG_HS_WKUP_IRQHandler                            build_F407VE/startup_stm32f407xx.o
+PVD_IRQHandler                                    build_F407VE/startup_stm32f407xx.o
+PendSV_Handler                                    build_F407VE/startup_stm32f407xx.o
+RCC_IRQHandler                                    build_F407VE/startup_stm32f407xx.o
+RTC_Alarm_IRQHandler                              build_F407VE/startup_stm32f407xx.o
+RTC_WKUP_IRQHandler                               build_F407VE/startup_stm32f407xx.o
+Reset_Handler                                     build_F407VE/startup_stm32f407xx.o
+SDIO_IRQHandler                                   build_F407VE/startup_stm32f407xx.o
+SPI1_IRQHandler                                   build_F407VE/startup_stm32f407xx.o
+SPI2_IRQHandler                                   build_F407VE/startup_stm32f407xx.o
+SPI3_IRQHandler                                   build_F407VE/startup_stm32f407xx.o
+SVC_Handler                                       build_F407VE/startup_stm32f407xx.o
+SysTick_Handler                                   build_F407VE/main.o
+SysTick_Init                                      build_F407VE/systick.o
+                                                  build_F407VE/main.o
+SystemClock_Config                                build_F407VE/rcc.o
+                                                  build_F407VE/main.o
+SystemCoreClock                                   build_F407VE/system_stm32f4xx.o
+                                                  build_F407VE/systick.o
+SystemCoreClockUpdate                             build_F407VE/system_stm32f4xx.o
+                                                  build_F407VE/rcc.o
+SystemInit                                        build_F407VE/system_stm32f4xx.o
+                                                  build_F407VE/startup_stm32f407xx.o
+TAMP_STAMP_IRQHandler                             build_F407VE/startup_stm32f407xx.o
+TIM1_BRK_TIM9_IRQHandler                          build_F407VE/startup_stm32f407xx.o
+TIM1_CC_IRQHandler                                build_F407VE/startup_stm32f407xx.o
+TIM1_TRG_COM_TIM11_IRQHandler                     build_F407VE/startup_stm32f407xx.o
+TIM1_UP_TIM10_IRQHandler                          build_F407VE/startup_stm32f407xx.o
+TIM2_IRQHandler                                   build_F407VE/startup_stm32f407xx.o
+TIM3_IRQHandler                                   build_F407VE/startup_stm32f407xx.o
+TIM4_IRQHandler                                   build_F407VE/startup_stm32f407xx.o
+TIM5_IRQHandler                                   build_F407VE/startup_stm32f407xx.o
+TIM6_DAC_IRQHandler                               build_F407VE/startup_stm32f407xx.o
+TIM7_IRQHandler                                   build_F407VE/startup_stm32f407xx.o
+TIM8_BRK_TIM12_IRQHandler                         build_F407VE/startup_stm32f407xx.o
+TIM8_CC_IRQHandler                                build_F407VE/startup_stm32f407xx.o
+TIM8_TRG_COM_TIM14_IRQHandler                     build_F407VE/startup_stm32f407xx.o
+TIM8_UP_TIM13_IRQHandler                          build_F407VE/startup_stm32f407xx.o
+UART4_IRQHandler                                  build_F407VE/startup_stm32f407xx.o
+UART5_IRQHandler                                  build_F407VE/startup_stm32f407xx.o
+USART1_IRQHandler                                 build_F407VE/startup_stm32f407xx.o
+USART2_IRQHandler                                 build_F407VE/startup_stm32f407xx.o
+USART3_IRQHandler                                 build_F407VE/startup_stm32f407xx.o
+USART6_IRQHandler                                 build_F407VE/startup_stm32f407xx.o
+UsageFault_Handler                                build_F407VE/startup_stm32f407xx.o
+WWDG_IRQHandler                                   build_F407VE/startup_stm32f407xx.o
+_Min_Stack_Size                                   build_F407VE/sysmem.o
+__adddf3                                          C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_d2f                                       C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+                                                  build_F407VE/button_debouncer.o
+__aeabi_dadd                                      C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_ddiv                                      C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                                                  build_F407VE/button_debouncer.o
+__aeabi_dmul                                      C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+                                                  build_F407VE/button_debouncer.o
+__aeabi_drsub                                     C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_dsub                                      C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_f2d                                       C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                                                  build_F407VE/button_debouncer.o
+__aeabi_i2d                                       C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_l2d                                       C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_ui2d                                      C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_ul2d                                      C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__atexit                                          C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+__atexit0                                         C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+__atexit_dummy                                    C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+__atexit_recursive_mutex                          C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+__bss_end__                                       C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__bss_start__                                     C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__call_exitprocs                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+__deregister_frame_info                           C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+__divdf3                                          C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+__dso_handle                                      C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+__env                                             build_F407VE/syscalls.o
+__errno                                           C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+                                                  build_F407VE/sysmem.o
+                                                  build_F407VE/syscalls.o
+__extendsfdf2                                     C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__fini_array_end                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
+__fini_array_start                                C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
+__floatdidf                                       C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatsidf                                       C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatundidf                                     C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatunsidf                                     C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__fp_lock_all                                     C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__fp_unlock_all                                   C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__ieee754_expf                                    C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+__init_array_end                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+__init_array_start                                C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+__io_getchar                                      build_F407VE/syscalls.o
+__io_putchar                                      build_F407VE/syscalls.o
+__libc_fini_array                                 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__libc_init_array                                 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+                                                  build_F407VE/startup_stm32f407xx.o
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__lock___arc4random_mutex                         C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+__lock___at_quick_exit_mutex                      C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+__lock___atexit_recursive_mutex                   C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+__lock___dd_hash_mutex                            C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+__lock___env_recursive_mutex                      C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+__lock___malloc_recursive_mutex                   C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+__lock___sfp_recursive_mutex                      C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__lock___tz_mutex                                 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+__malloc_free_list                                C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+__malloc_lock                                     C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+__malloc_sbrk_start                               C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+__malloc_unlock                                   C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+__math_divzerof                                   C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+__math_invalidf                                   C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+__math_oflowf                                     C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+__math_uflowf                                     C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+__muldf3                                          C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+__on_exit_args                                    C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+__preinit_array_end                               C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+__preinit_array_start                             C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+__register_exitproc                               C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-atexit.o)
+__register_frame_info                             C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+__retarget_lock_acquire                           C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+__retarget_lock_acquire_recursive                 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__retarget_lock_close                             C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+__retarget_lock_close_recursive                   C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+__retarget_lock_init                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+__retarget_lock_init_recursive                    C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__retarget_lock_release                           C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+__retarget_lock_release_recursive                 C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__retarget_lock_try_acquire                       C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+__retarget_lock_try_acquire_recursive             C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+__sclose                                          C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__seofread                                        C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+__sf                                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+__sflush_r                                        C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+__sfp                                             C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__sfp_lock_acquire                                C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__sfp_lock_release                                C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__sglue                                           C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+__sinit                                           C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+__sread                                           C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__sseek                                           C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__stack                                           C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__stdio_exit_handler                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+__subdf3                                          C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__swrite                                          C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__truncdfsf2                                      C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+_close                                            build_F407VE/syscalls.o
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
+_close_r                                          C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+_ebss                                             build_F407VE/startup_stm32f407xx.o
+_edata                                            build_F407VE/startup_stm32f407xx.o
+_end                                              build_F407VE/sysmem.o
+_estack                                           build_F407VE/startup_stm32f407xx.o
+                                                  build_F407VE/sysmem.o
+_execve                                           build_F407VE/syscalls.o
+_exit                                             build_F407VE/syscalls.o
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+_fflush_r                                         C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+_fini                                             C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
+_fork                                             build_F407VE/syscalls.o
+_free_r                                           C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+_fstat                                            build_F407VE/syscalls.o
+_fwalk_sglue                                      C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+_getpid                                           build_F407VE/syscalls.o
+_impure_data                                      C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+_impure_ptr                                       C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+_init                                             C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+_isatty                                           build_F407VE/syscalls.o
+_kill                                             build_F407VE/syscalls.o
+_link                                             build_F407VE/syscalls.o
+_lseek                                            build_F407VE/syscalls.o
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
+_lseek_r                                          C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+_mainCRTStartup                                   C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+_malloc_r                                         C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+_open                                             build_F407VE/syscalls.o
+_read                                             build_F407VE/syscalls.o
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
+_read_r                                           C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+_reclaim_reent                                    C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+_sbrk                                             build_F407VE/sysmem.o
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+_sbrk_r                                           C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+_sbss                                             build_F407VE/startup_stm32f407xx.o
+_sdata                                            build_F407VE/startup_stm32f407xx.o
+_sidata                                           build_F407VE/startup_stm32f407xx.o
+_stack_init                                       C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+_start                                            C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+_stat                                             build_F407VE/syscalls.o
+_times                                            build_F407VE/syscalls.o
+_unlink                                           build_F407VE/syscalls.o
+_wait                                             build_F407VE/syscalls.o
+_write                                            build_F407VE/syscalls.o
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
+_write_r                                          C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+active_led_count                                  build_F407VE/main.o
+atexit                                            C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-atexit.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+btn1_sequence                                     build_F407VE/main.o
+btn2_count                                        build_F407VE/main.o
+current_led_index                                 build_F407VE/main.o
+environ                                           build_F407VE/syscalls.o
+errno                                             C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
+exit                                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+expf                                              C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+                                                  build_F407VE/button_debouncer.o
+fflush                                            C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+finitef                                           C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+g_pfnVectors                                      build_F407VE/startup_stm32f407xx.o
+hardware_init_hook                                C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+initialise_monitor_handles                        build_F407VE/syscalls.o
+main                                              build_F407VE/main.o
+                                                  build_F407VE/startup_stm32f407xx.o
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+malloc                                            C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
+memset                                            C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                                                  C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+millis                                            build_F407VE/main.o
+on_button1_rise                                   build_F407VE/main.o
+on_button2_rise                                   build_F407VE/main.o
+software_init_hook                                C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+update_leds                                       build_F407VE/main.o

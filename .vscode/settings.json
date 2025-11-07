@@ -1,5 +1,12 @@
 {
     "files.exclude": {
         "**/.git": false
+    },
+    "files.associations": {
+        "main.h": "c",
+        "gpio.h": "c",
+        "rcc.h": "c",
+        "stm32f407xx.h": "c",
+        "stm32f4xx.h": "c"
     }
 }

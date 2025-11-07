@@ -135,6 +135,11 @@ endif
 C_SOURCES =  \
 $(SYS) \
 Core/Src/main.c \
+Core/Src/gpio.c \
+Core/Src/rcc.c \
+Core/Src/systick.c \
+Core/Src/button_debouncer.c \
+
 
 # ASM sources
 ASM_SOURCES =  \
@@ -198,6 +203,7 @@ C_INCLUDES =  \
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
 
 CFLAGS += $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
+CFLAGS += -D HSE_VALUE=8000000
 
 ifeq ($(DEBUG), 1)
 	CFLAGS += -g -gdwarf-2
@@ -255,7 +261,7 @@ $(BUILD_DIR)/$(TARGET_SERIES)$(TARGET_VERSION).elf: $(OBJECTS) Makefile
 	@echo "-----------------------------------------------------"	
 
 $(BUILD_DIR):
-	@"mkdir" $@
+	@mkdir $@
 
 #######################################
 # clean up

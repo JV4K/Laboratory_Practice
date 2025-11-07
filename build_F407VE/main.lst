@@ -1,0 +1,658 @@
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/main.c"
+  20              		.section	.text.update_leds,"ax",%progbits
+  21              		.align	1
+  22              		.global	update_leds
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	update_leds:
+  28              	.LFB130:
+   1:Core/Src/main.c **** #include "main.h" // Предполагается, что здесь есть все: main.h, butto
+   2:Core/Src/main.c **** 
+   3:Core/Src/main.c **** // --- Глобальные переменные ---
+   4:Core/Src/main.c **** uint64_t millis = 0; // Переименовано в millis для соответствия SysTic
+   5:Core/Src/main.c **** Button_t btn1_sequence; // Кнопка для переключения одного светоди
+   6:Core/Src/main.c **** Button_t btn2_count;    // Кнопка для изменения количества активн
+   7:Core/Src/main.c **** 
+   8:Core/Src/main.c **** // Состояния логики
+   9:Core/Src/main.c **** uint8_t current_led_index = 0; // 0, 1, 2 - для Task 1: какой LED включен
+  10:Core/Src/main.c **** uint8_t active_led_count = 1;  // 1, 2, 3 - для Task 2: сколько LED включено
+  11:Core/Src/main.c **** 
+  12:Core/Src/main.c **** // --- CMSIS Макросы для управления светодиодами ---
+  13:Core/Src/main.c **** #define LED1_PIN_BIT 1 // PA1
+  14:Core/Src/main.c **** #define LED2_PIN_BIT 1 // PB1
+  15:Core/Src/main.c **** #define LED3_PIN_BIT 2 // PC2
+  16:Core/Src/main.c **** 
+  17:Core/Src/main.c **** #define LED_ON(PORT, PIN_BIT)  SET_BIT(PORT->BSRR, (1U << (PIN_BIT)))
+  18:Core/Src/main.c **** #define LED_OFF(PORT, PIN_BIT) SET_BIT(PORT->BSRR, (1U << ((PIN_BIT) + 16U)))
+  19:Core/Src/main.c **** 
+  20:Core/Src/main.c **** // --- Функция управления светодиодами ---
+  21:Core/Src/main.c **** 
+  22:Core/Src/main.c **** /**
+  23:Core/Src/main.c ****  * @brief Обновляет состояние всех светодиодов на основе �
+  24:Core/Src/main.c ****  * @note Логика: Выключает все, затем включает 'active_led_count' с
+  25:Core/Src/main.c ****  * начиная с 'current_led_index' по циклу.
+  26:Core/Src/main.c ****  */
+  27:Core/Src/main.c **** void update_leds() {
+  29              		.loc 1 27 20 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 24
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s 			page 2
+
+
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33              		@ link register save eliminated.
+  34 0000 10B4     		push	{r4}
+  35              	.LCFI0:
+  36              		.cfi_def_cfa_offset 4
+  37              		.cfi_offset 4, -4
+  38 0002 87B0     		sub	sp, sp, #28
+  39              	.LCFI1:
+  40              		.cfi_def_cfa_offset 32
+  28:Core/Src/main.c ****     // 1. Выключаем все светодиоды
+  29:Core/Src/main.c ****     LED_OFF(GPIOA, LED1_PIN_BIT);
+  41              		.loc 1 29 5 view .LVU1
+  42 0004 1E4A     		ldr	r2, .L5
+  43 0006 9369     		ldr	r3, [r2, #24]
+  44 0008 43F40033 		orr	r3, r3, #131072
+  45 000c 9361     		str	r3, [r2, #24]
+  30:Core/Src/main.c ****     LED_OFF(GPIOB, LED2_PIN_BIT);
+  46              		.loc 1 30 5 view .LVU2
+  47 000e 02F58062 		add	r2, r2, #1024
+  48 0012 9369     		ldr	r3, [r2, #24]
+  49 0014 43F40033 		orr	r3, r3, #131072
+  50 0018 9361     		str	r3, [r2, #24]
+  31:Core/Src/main.c ****     LED_OFF(GPIOC, LED3_PIN_BIT);
+  51              		.loc 1 31 5 view .LVU3
+  52 001a 02F58062 		add	r2, r2, #1024
+  53 001e 9369     		ldr	r3, [r2, #24]
+  54 0020 43F48023 		orr	r3, r3, #262144
+  55 0024 9361     		str	r3, [r2, #24]
+  32:Core/Src/main.c **** 
+  33:Core/Src/main.c ****     // Массив для удобного перебора LED
+  34:Core/Src/main.c ****     typedef struct { GPIO_TypeDef* port; uint8_t pin_bit; } LedDef_t;
+  56              		.loc 1 34 5 view .LVU4
+  35:Core/Src/main.c ****     LedDef_t leds[] = {
+  57              		.loc 1 35 5 view .LVU5
+  58              		.loc 1 35 14 is_stmt 0 view .LVU6
+  59 0026 EC46     		mov	ip, sp
+  60 0028 164C     		ldr	r4, .L5+4
+  61 002a 0FCC     		ldmia	r4!, {r0, r1, r2, r3}
+  62 002c ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
+  63 0030 94E80300 		ldm	r4, {r0, r1}
+  64 0034 8CE80300 		stm	ip, {r0, r1}
+  36:Core/Src/main.c ****         {GPIOA, LED1_PIN_BIT}, // LED 1 (PA1)
+  37:Core/Src/main.c ****         {GPIOB, LED2_PIN_BIT}, // LED 2 (PB1)
+  38:Core/Src/main.c ****         {GPIOC, LED3_PIN_BIT}  // LED 3 (PC2)
+  39:Core/Src/main.c ****     };
+  40:Core/Src/main.c ****     const uint8_t total_leds = sizeof(leds) / sizeof(LedDef_t);
+  65              		.loc 1 40 5 is_stmt 1 view .LVU7
+  66              	.LVL0:
+  41:Core/Src/main.c **** 
+  42:Core/Src/main.c ****     // 2. Включаем 'active_led_count' светодиодов, начиная с 'current_le
+  43:Core/Src/main.c ****     for (int i = 0; i < active_led_count; i++) {
+  67              		.loc 1 43 5 view .LVU8
+  68              	.LBB2:
+  69              		.loc 1 43 10 view .LVU9
+  70              		.loc 1 43 14 is_stmt 0 view .LVU10
+  71 0038 0021     		movs	r1, #0
+  72              		.loc 1 43 5 view .LVU11
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s 			page 3
+
+
+  73 003a 19E0     		b	.L2
+  74              	.LVL1:
+  75              	.L3:
+  76              	.LBB3:
+  44:Core/Src/main.c ****         uint8_t idx = (current_led_index + i) % total_leds;
+  77              		.loc 1 44 9 is_stmt 1 view .LVU12
+  78              		.loc 1 44 42 is_stmt 0 view .LVU13
+  79 003c 124B     		ldr	r3, .L5+8
+  80 003e 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+  81 0040 0A44     		add	r2, r2, r1
+  82              		.loc 1 44 47 view .LVU14
+  83 0042 124B     		ldr	r3, .L5+12
+  84 0044 83FB0203 		smull	r0, r3, r3, r2
+  85 0048 A3EBE273 		sub	r3, r3, r2, asr #31
+  86 004c 03EB4303 		add	r3, r3, r3, lsl #1
+  87 0050 D31A     		subs	r3, r2, r3
+  88              	.LVL2:
+  45:Core/Src/main.c ****         LED_ON(leds[idx].port, leds[idx].pin_bit);
+  89              		.loc 1 45 9 is_stmt 1 view .LVU15
+  90 0052 DBB2     		uxtb	r3, r3
+  91              		.loc 1 45 9 is_stmt 0 view .LVU16
+  92 0054 06AA     		add	r2, sp, #24
+  93 0056 02EBC303 		add	r3, r2, r3, lsl #3
+  94              	.LVL3:
+  95              		.loc 1 45 9 view .LVU17
+  96 005a 53F8180C 		ldr	r0, [r3, #-24]
+  97 005e 8269     		ldr	r2, [r0, #24]
+  98 0060 13F814CC 		ldrb	ip, [r3, #-20]	@ zero_extendqisi2
+  99 0064 0123     		movs	r3, #1
+ 100 0066 03FA0CF3 		lsl	r3, r3, ip
+ 101 006a 1343     		orrs	r3, r3, r2
+ 102 006c 8361     		str	r3, [r0, #24]
+ 103              	.LBE3:
+  43:Core/Src/main.c ****         uint8_t idx = (current_led_index + i) % total_leds;
+ 104              		.loc 1 43 44 is_stmt 1 discriminator 3 view .LVU18
+ 105 006e 0131     		adds	r1, r1, #1
+ 106              	.LVL4:
+ 107              	.L2:
+  43:Core/Src/main.c ****         uint8_t idx = (current_led_index + i) % total_leds;
+ 108              		.loc 1 43 23 discriminator 1 view .LVU19
+ 109 0070 074B     		ldr	r3, .L5+16
+ 110 0072 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 111 0074 8B42     		cmp	r3, r1
+ 112 0076 E1DC     		bgt	.L3
+ 113              	.LBE2:
+  46:Core/Src/main.c ****     }
+  47:Core/Src/main.c **** }
+ 114              		.loc 1 47 1 is_stmt 0 view .LVU20
+ 115 0078 07B0     		add	sp, sp, #28
+ 116              	.LCFI2:
+ 117              		.cfi_def_cfa_offset 4
+ 118              		@ sp needed
+ 119 007a 5DF8044B 		ldr	r4, [sp], #4
+ 120              	.LCFI3:
+ 121              		.cfi_restore 4
+ 122              		.cfi_def_cfa_offset 0
+ 123 007e 7047     		bx	lr
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s 			page 4
+
+
+ 124              	.L6:
+ 125              		.align	2
+ 126              	.L5:
+ 127 0080 00000240 		.word	1073872896
+ 128 0084 00000000 		.word	.LANCHOR0
+ 129 0088 00000000 		.word	current_led_index
+ 130 008c 56555555 		.word	1431655766
+ 131 0090 00000000 		.word	active_led_count
+ 132              		.cfi_endproc
+ 133              	.LFE130:
+ 135              		.section	.text.on_button1_rise,"ax",%progbits
+ 136              		.align	1
+ 137              		.global	on_button1_rise
+ 138              		.syntax unified
+ 139              		.thumb
+ 140              		.thumb_func
+ 142              	on_button1_rise:
+ 143              	.LVL5:
+ 144              	.LFB131:
+  48:Core/Src/main.c **** 
+  49:Core/Src/main.c **** // --- Обработчики событий кнопок ---
+  50:Core/Src/main.c **** 
+  51:Core/Src/main.c **** // Кнопка 1 (PC0) - Переключение одного светодиода (Task 1)
+  52:Core/Src/main.c **** void on_button1_rise(void* context) {
+ 145              		.loc 1 52 37 is_stmt 1 view -0
+ 146              		.cfi_startproc
+ 147              		@ args = 0, pretend = 0, frame = 0
+ 148              		@ frame_needed = 0, uses_anonymous_args = 0
+ 149              		.loc 1 52 37 is_stmt 0 view .LVU22
+ 150 0000 08B5     		push	{r3, lr}
+ 151              	.LCFI4:
+ 152              		.cfi_def_cfa_offset 8
+ 153              		.cfi_offset 3, -8
+ 154              		.cfi_offset 14, -4
+  53:Core/Src/main.c ****     (void)context; // Не используется
+ 155              		.loc 1 53 5 is_stmt 1 view .LVU23
+  54:Core/Src/main.c **** 
+  55:Core/Src/main.c ****     // 1. Устанавливаем режим: только один светодиод акти�
+  56:Core/Src/main.c ****     // active_led_count = 1;
+  57:Core/Src/main.c ****     
+  58:Core/Src/main.c ****     // 2. Переключаем индекс (0 -> 1 -> 2 -> 0)
+  59:Core/Src/main.c ****     current_led_index = (current_led_index + 1) % 3;
+ 156              		.loc 1 59 5 view .LVU24
+ 157              		.loc 1 59 44 is_stmt 0 view .LVU25
+ 158 0002 0649     		ldr	r1, .L9
+ 159 0004 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
+ 160 0006 0132     		adds	r2, r2, #1
+ 161              		.loc 1 59 49 view .LVU26
+ 162 0008 054B     		ldr	r3, .L9+4
+ 163 000a 83FB0203 		smull	r0, r3, r3, r2
+ 164              	.LVL6:
+ 165              		.loc 1 59 49 view .LVU27
+ 166 000e 03EB4303 		add	r3, r3, r3, lsl #1
+ 167 0012 D31A     		subs	r3, r2, r3
+ 168              		.loc 1 59 23 view .LVU28
+ 169 0014 0B70     		strb	r3, [r1]
+  60:Core/Src/main.c ****     
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s 			page 5
+
+
+  61:Core/Src/main.c ****     update_leds();
+ 170              		.loc 1 61 5 is_stmt 1 view .LVU29
+ 171 0016 FFF7FEFF 		bl	update_leds
+ 172              	.LVL7:
+  62:Core/Src/main.c **** }
+ 173              		.loc 1 62 1 is_stmt 0 view .LVU30
+ 174 001a 08BD     		pop	{r3, pc}
+ 175              	.L10:
+ 176              		.align	2
+ 177              	.L9:
+ 178 001c 00000000 		.word	current_led_index
+ 179 0020 56555555 		.word	1431655766
+ 180              		.cfi_endproc
+ 181              	.LFE131:
+ 183              		.section	.text.on_button2_rise,"ax",%progbits
+ 184              		.align	1
+ 185              		.global	on_button2_rise
+ 186              		.syntax unified
+ 187              		.thumb
+ 188              		.thumb_func
+ 190              	on_button2_rise:
+ 191              	.LVL8:
+ 192              	.LFB132:
+  63:Core/Src/main.c **** 
+  64:Core/Src/main.c **** // Кнопка 2 (PC1) - Установка количества активных светодио
+  65:Core/Src/main.c **** void on_button2_rise(void* context) {
+ 193              		.loc 1 65 37 is_stmt 1 view -0
+ 194              		.cfi_startproc
+ 195              		@ args = 0, pretend = 0, frame = 0
+ 196              		@ frame_needed = 0, uses_anonymous_args = 0
+ 197              		.loc 1 65 37 is_stmt 0 view .LVU32
+ 198 0000 08B5     		push	{r3, lr}
+ 199              	.LCFI5:
+ 200              		.cfi_def_cfa_offset 8
+ 201              		.cfi_offset 3, -8
+ 202              		.cfi_offset 14, -4
+  66:Core/Src/main.c ****     (void)context; // Не используется
+ 203              		.loc 1 66 5 is_stmt 1 view .LVU33
+  67:Core/Src/main.c ****     
+  68:Core/Src/main.c ****     // Переключаем количество активных LED (1 -> 2 -> 3 -> 1)
+  69:Core/Src/main.c ****     active_led_count = (active_led_count % 3) + 1;
+ 204              		.loc 1 69 5 view .LVU34
+ 205              		.loc 1 69 47 is_stmt 0 view .LVU35
+ 206 0002 0948     		ldr	r0, .L13
+ 207              	.LVL9:
+ 208              		.loc 1 69 47 view .LVU36
+ 209 0004 0378     		ldrb	r3, [r0]	@ zero_extendqisi2
+ 210 0006 094A     		ldr	r2, .L13+4
+ 211 0008 A2FB0312 		umull	r1, r2, r2, r3
+ 212 000c 02F0FE01 		and	r1, r2, #254
+ 213 0010 01EB5202 		add	r2, r1, r2, lsr #1
+ 214 0014 9B1A     		subs	r3, r3, r2
+ 215 0016 0133     		adds	r3, r3, #1
+ 216              		.loc 1 69 22 view .LVU37
+ 217 0018 0370     		strb	r3, [r0]
+  70:Core/Src/main.c **** 
+  71:Core/Src/main.c ****     // Сбрасываем индекс, чтобы всегда начинать с LED1 при �
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s 			page 6
+
+
+  72:Core/Src/main.c ****     current_led_index = 0; 
+ 218              		.loc 1 72 5 is_stmt 1 view .LVU38
+ 219              		.loc 1 72 23 is_stmt 0 view .LVU39
+ 220 001a 054B     		ldr	r3, .L13+8
+ 221 001c 0022     		movs	r2, #0
+ 222 001e 1A70     		strb	r2, [r3]
+  73:Core/Src/main.c **** 
+  74:Core/Src/main.c ****     update_leds();
+ 223              		.loc 1 74 5 is_stmt 1 view .LVU40
+ 224 0020 FFF7FEFF 		bl	update_leds
+ 225              	.LVL10:
+  75:Core/Src/main.c **** }
+ 226              		.loc 1 75 1 is_stmt 0 view .LVU41
+ 227 0024 08BD     		pop	{r3, pc}
+ 228              	.L14:
+ 229 0026 00BF     		.align	2
+ 230              	.L13:
+ 231 0028 00000000 		.word	active_led_count
+ 232 002c ABAAAAAA 		.word	-1431655765
+ 233 0030 00000000 		.word	current_led_index
+ 234              		.cfi_endproc
+ 235              	.LFE132:
+ 237              		.section	.text.main,"ax",%progbits
+ 238              		.align	1
+ 239              		.global	main
+ 240              		.syntax unified
+ 241              		.thumb
+ 242              		.thumb_func
+ 244              	main:
+ 245              	.LFB133:
+  76:Core/Src/main.c **** 
+  77:Core/Src/main.c **** 
+  78:Core/Src/main.c **** int main(){
+ 246              		.loc 1 78 11 is_stmt 1 view -0
+ 247              		.cfi_startproc
+ 248              		@ Volatile: function does not return.
+ 249              		@ args = 0, pretend = 0, frame = 0
+ 250              		@ frame_needed = 0, uses_anonymous_args = 0
+ 251 0000 08B5     		push	{r3, lr}
+ 252              	.LCFI6:
+ 253              		.cfi_def_cfa_offset 8
+ 254              		.cfi_offset 3, -8
+ 255              		.cfi_offset 14, -4
+  79:Core/Src/main.c ****     // Инициализация периферии (как в вашем коде)
+  80:Core/Src/main.c ****     SystemClock_Config();
+ 256              		.loc 1 80 5 view .LVU43
+ 257 0002 FFF7FEFF 		bl	SystemClock_Config
+ 258              	.LVL11:
+  81:Core/Src/main.c ****     SysTick_Init();
+ 259              		.loc 1 81 5 view .LVU44
+ 260 0006 FFF7FEFF 		bl	SysTick_Init
+ 261              	.LVL12:
+  82:Core/Src/main.c **** 
+  83:Core/Src/main.c ****     GPIOA_Init_Direct();
+ 262              		.loc 1 83 5 view .LVU45
+ 263 000a FFF7FEFF 		bl	GPIOA_Init_Direct
+ 264              	.LVL13:
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s 			page 7
+
+
+  84:Core/Src/main.c ****     GPIOB_Init_Macro();
+ 265              		.loc 1 84 5 view .LVU46
+ 266 000e FFF7FEFF 		bl	GPIOB_Init_Macro
+ 267              	.LVL14:
+  85:Core/Src/main.c ****     GPIOC_Init_CMSIS();
+ 268              		.loc 1 85 5 view .LVU47
+ 269 0012 FFF7FEFF 		bl	GPIOC_Init_CMSIS
+ 270              	.LVL15:
+  86:Core/Src/main.c ****     
+  87:Core/Src/main.c ****     // Инициализация модуля Debouncer
+  88:Core/Src/main.c ****     // Delta T = 1.0 мс, Cutoff Freq = 5 Гц, Hysteresis = 0.8/0.2.
+  89:Core/Src/main.c **** 
+  90:Core/Src/main.c ****     // Кнопка 1 (PC0)
+  91:Core/Src/main.c ****     Button_Init(
+ 271              		.loc 1 91 5 view .LVU48
+  92:Core/Src/main.c ****         &btn1_sequence, 
+  93:Core/Src/main.c ****         1.0f, 5.0f, 0.8f, 0.2f, 
+  94:Core/Src/main.c ****         (READ_BIT(GPIOC->IDR, GPIO_IDR_ID0) ? 1 : 0) // Начальное состояние
+ 272              		.loc 1 94 10 is_stmt 0 view .LVU49
+ 273 0016 1B4D     		ldr	r5, .L18
+ 274 0018 2969     		ldr	r1, [r5, #16]
+ 275 001a 01F00101 		and	r1, r1, #1
+  91:Core/Src/main.c ****         &btn1_sequence, 
+ 276              		.loc 1 91 5 view .LVU50
+ 277 001e DFED1A8A 		vldr.32	s17, .L18+4
+ 278 0022 9FED1A8A 		vldr.32	s16, .L18+8
+ 279 0026 1A4C     		ldr	r4, .L18+12
+ 280 0028 F0EE681A 		vmov.f32	s3, s17
+ 281 002c B0EE481A 		vmov.f32	s2, s16
+ 282 0030 F1EE040A 		vmov.f32	s1, #5.0e+0
+ 283 0034 B7EE000A 		vmov.f32	s0, #1.0e+0
+ 284 0038 2046     		mov	r0, r4
+ 285 003a FFF7FEFF 		bl	Button_Init
+ 286              	.LVL16:
+  95:Core/Src/main.c ****     );
+  96:Core/Src/main.c ****     Button_SetRiseCallback(&btn1_sequence, on_button1_rise);
+ 287              		.loc 1 96 5 is_stmt 1 view .LVU51
+ 288 003e 1549     		ldr	r1, .L18+16
+ 289 0040 2046     		mov	r0, r4
+ 290 0042 FFF7FEFF 		bl	Button_SetRiseCallback
+ 291              	.LVL17:
+  97:Core/Src/main.c ****     Button_SetContext(&btn1_sequence, &btn1_sequence);
+ 292              		.loc 1 97 5 view .LVU52
+ 293 0046 2146     		mov	r1, r4
+ 294 0048 2046     		mov	r0, r4
+ 295 004a FFF7FEFF 		bl	Button_SetContext
+ 296              	.LVL18:
+  98:Core/Src/main.c **** 
+  99:Core/Src/main.c ****     // Кнопка 2 (PC1)
+ 100:Core/Src/main.c ****     Button_Init(
+ 297              		.loc 1 100 5 view .LVU53
+ 101:Core/Src/main.c ****         &btn2_count, 
+ 102:Core/Src/main.c ****         1.0f, 5.0f, 0.8f, 0.2f, 
+ 103:Core/Src/main.c ****         (READ_BIT(GPIOC->IDR, GPIO_IDR_ID1) ? 1 : 0) // Начальное состояние
+ 298              		.loc 1 103 10 is_stmt 0 view .LVU54
+ 299 004e 2969     		ldr	r1, [r5, #16]
+ 100:Core/Src/main.c ****         &btn2_count, 
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s 			page 8
+
+
+ 300              		.loc 1 100 5 view .LVU55
+ 301 0050 114C     		ldr	r4, .L18+20
+ 302 0052 C1F34001 		ubfx	r1, r1, #1, #1
+ 303 0056 F0EE681A 		vmov.f32	s3, s17
+ 304 005a B0EE481A 		vmov.f32	s2, s16
+ 305 005e F1EE040A 		vmov.f32	s1, #5.0e+0
+ 306 0062 B7EE000A 		vmov.f32	s0, #1.0e+0
+ 307 0066 2046     		mov	r0, r4
+ 308 0068 FFF7FEFF 		bl	Button_Init
+ 309              	.LVL19:
+ 104:Core/Src/main.c ****     );
+ 105:Core/Src/main.c ****     Button_SetRiseCallback(&btn2_count, on_button2_rise);
+ 310              		.loc 1 105 5 is_stmt 1 view .LVU56
+ 311 006c 0B49     		ldr	r1, .L18+24
+ 312 006e 2046     		mov	r0, r4
+ 313 0070 FFF7FEFF 		bl	Button_SetRiseCallback
+ 314              	.LVL20:
+ 106:Core/Src/main.c ****     Button_SetContext(&btn2_count, &btn2_count);
+ 315              		.loc 1 106 5 view .LVU57
+ 316 0074 2146     		mov	r1, r4
+ 317 0076 2046     		mov	r0, r4
+ 318 0078 FFF7FEFF 		bl	Button_SetContext
+ 319              	.LVL21:
+ 107:Core/Src/main.c **** 
+ 108:Core/Src/main.c ****     // Устанавливаем начальное состояние светодиодов (LED
+ 109:Core/Src/main.c ****     update_leds();
+ 320              		.loc 1 109 5 view .LVU58
+ 321 007c FFF7FEFF 		bl	update_leds
+ 322              	.LVL22:
+ 323              	.L16:
+ 110:Core/Src/main.c **** 
+ 111:Core/Src/main.c ****     while (1)
+ 324              		.loc 1 111 5 view .LVU59
+ 112:Core/Src/main.c ****     {
+ 113:Core/Src/main.c ****         // Основной цикл пуст, вся логика обработки кнопок 
+ 114:Core/Src/main.c ****         // вынесена в прерывание SysTick
+ 115:Core/Src/main.c ****     }
+ 325              		.loc 1 115 5 view .LVU60
+ 111:Core/Src/main.c ****     {
+ 326              		.loc 1 111 11 view .LVU61
+ 327 0080 FEE7     		b	.L16
+ 328              	.L19:
+ 329 0082 00BF     		.align	2
+ 330              	.L18:
+ 331 0084 00080240 		.word	1073874944
+ 332 0088 CDCC4C3E 		.word	1045220557
+ 333 008c CDCC4C3F 		.word	1061997773
+ 334 0090 00000000 		.word	btn1_sequence
+ 335 0094 00000000 		.word	on_button1_rise
+ 336 0098 00000000 		.word	btn2_count
+ 337 009c 00000000 		.word	on_button2_rise
+ 338              		.cfi_endproc
+ 339              	.LFE133:
+ 341              		.section	.text.SysTick_Handler,"ax",%progbits
+ 342              		.align	1
+ 343              		.global	SysTick_Handler
+ 344              		.syntax unified
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s 			page 9
+
+
+ 345              		.thumb
+ 346              		.thumb_func
+ 348              	SysTick_Handler:
+ 349              	.LFB134:
+ 116:Core/Src/main.c **** }
+ 117:Core/Src/main.c **** 
+ 118:Core/Src/main.c **** /**
+ 119:Core/Src/main.c ****  * @brief Обработчик прерывания SysTick (1 кГц)
+ 120:Core/Src/main.c ****  */
+ 121:Core/Src/main.c **** void SysTick_Handler(void) {
+ 350              		.loc 1 121 28 view -0
+ 351              		.cfi_startproc
+ 352              		@ args = 0, pretend = 0, frame = 0
+ 353              		@ frame_needed = 0, uses_anonymous_args = 0
+ 354 0000 10B5     		push	{r4, lr}
+ 355              	.LCFI7:
+ 356              		.cfi_def_cfa_offset 8
+ 357              		.cfi_offset 4, -8
+ 358              		.cfi_offset 14, -4
+ 122:Core/Src/main.c ****     millis++;
+ 359              		.loc 1 122 5 view .LVU63
+ 360              		.loc 1 122 11 is_stmt 0 view .LVU64
+ 361 0002 0B4A     		ldr	r2, .L22
+ 362 0004 1368     		ldr	r3, [r2]
+ 363 0006 5168     		ldr	r1, [r2, #4]
+ 364 0008 0133     		adds	r3, r3, #1
+ 365 000a 41F10001 		adc	r1, r1, #0
+ 366 000e 1360     		str	r3, [r2]
+ 367 0010 5160     		str	r1, [r2, #4]
+ 123:Core/Src/main.c **** 
+ 124:Core/Src/main.c ****     // 1. Считываем сырые состояния кнопок (pull-down: 1 = нажат�
+ 125:Core/Src/main.c ****     uint8_t raw_state_btn1 = (READ_BIT(GPIOC->IDR, GPIO_IDR_ID0) ? 1 : 0);
+ 368              		.loc 1 125 5 is_stmt 1 view .LVU65
+ 369              		.loc 1 125 31 is_stmt 0 view .LVU66
+ 370 0012 084B     		ldr	r3, .L22+4
+ 371 0014 1969     		ldr	r1, [r3, #16]
+ 372              	.LVL23:
+ 126:Core/Src/main.c ****     uint8_t raw_state_btn2 = (READ_BIT(GPIOC->IDR, GPIO_IDR_ID1) ? 1 : 0);
+ 373              		.loc 1 126 5 is_stmt 1 view .LVU67
+ 374              		.loc 1 126 31 is_stmt 0 view .LVU68
+ 375 0016 1C69     		ldr	r4, [r3, #16]
+ 376              		.loc 1 126 70 view .LVU69
+ 377 0018 C4F34004 		ubfx	r4, r4, #1, #1
+ 378              	.LVL24:
+ 127:Core/Src/main.c **** 
+ 128:Core/Src/main.c ****     // 2. Обрабатываем каждое состояние кнопки
+ 129:Core/Src/main.c ****     Button_Process(&btn1_sequence, raw_state_btn1);
+ 379              		.loc 1 129 5 is_stmt 1 view .LVU70
+ 380 001c 01F00101 		and	r1, r1, #1
+ 381              	.LVL25:
+ 382              		.loc 1 129 5 is_stmt 0 view .LVU71
+ 383 0020 0548     		ldr	r0, .L22+8
+ 384 0022 FFF7FEFF 		bl	Button_Process
+ 385              	.LVL26:
+ 130:Core/Src/main.c ****     Button_Process(&btn2_count, raw_state_btn2);
+ 386              		.loc 1 130 5 is_stmt 1 view .LVU72
+ 387 0026 2146     		mov	r1, r4
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s 			page 10
+
+
+ 388 0028 0448     		ldr	r0, .L22+12
+ 389 002a FFF7FEFF 		bl	Button_Process
+ 390              	.LVL27:
+ 131:Core/Src/main.c **** }...
+ 391              		.loc 1 131 1 is_stmt 0 view .LVU73
+ 392 002e 10BD     		pop	{r4, pc}
+ 393              	.LVL28:
+ 394              	.L23:
+ 395              		.loc 1 131 1 view .LVU74
+ 396              		.align	2
+ 397              	.L22:
+ 398 0030 00000000 		.word	millis
+ 399 0034 00080240 		.word	1073874944
+ 400 0038 00000000 		.word	btn1_sequence
+ 401 003c 00000000 		.word	btn2_count
+ 402              		.cfi_endproc
+ 403              	.LFE134:
+ 405              		.global	active_led_count
+ 406              		.section	.data.active_led_count,"aw"
+ 409              	active_led_count:
+ 410 0000 01       		.byte	1
+ 411              		.global	current_led_index
+ 412              		.section	.bss.current_led_index,"aw",%nobits
+ 415              	current_led_index:
+ 416 0000 00       		.space	1
+ 417              		.global	btn2_count
+ 418              		.section	.bss.btn2_count,"aw",%nobits
+ 419              		.align	2
+ 422              	btn2_count:
+ 423 0000 00000000 		.space	32
+ 423      00000000 
+ 423      00000000 
+ 423      00000000 
+ 423      00000000 
+ 424              		.global	btn1_sequence
+ 425              		.section	.bss.btn1_sequence,"aw",%nobits
+ 426              		.align	2
+ 429              	btn1_sequence:
+ 430 0000 00000000 		.space	32
+ 430      00000000 
+ 430      00000000 
+ 430      00000000 
+ 430      00000000 
+ 431              		.global	millis
+ 432              		.section	.bss.millis,"aw",%nobits
+ 433              		.align	3
+ 436              	millis:
+ 437 0000 00000000 		.space	8
+ 437      00000000 
+ 438              		.section	.rodata
+ 439              		.align	2
+ 440              		.set	.LANCHOR0,. + 0
+ 441              	.LC0:
+ 442 0000 00000240 		.word	1073872896
+ 443 0004 01       		.byte	1
+ 444 0005 000000   		.space	3
+ 445 0008 00040240 		.word	1073873920
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s 			page 11
+
+
+ 446 000c 01       		.byte	1
+ 447 000d 000000   		.space	3
+ 448 0010 00080240 		.word	1073874944
+ 449 0014 02       		.byte	2
+ 450 0015 000000   		.space	3
+ 451              		.text
+ 452              	.Letext0:
+ 453              		.file 2 "C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/machine/_default
+ 454              		.file 3 "C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/sys/_stdint.h"
+ 455              		.file 4 "CMSIS/Devices/STM32F4xx/Inc/STM32F407xx/stm32f407xx.h"
+ 456              		.file 5 "Core/Inc/button_debouncer.h"
+ 457              		.file 6 "Core/Inc/gpio.h"
+ 458              		.file 7 "Core/Inc/systick.h"
+ 459              		.file 8 "Core/Inc/rcc.h"
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s 			page 12
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:21     .text.update_leds:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:27     .text.update_leds:00000000 update_leds
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:127    .text.update_leds:00000080 $d
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:415    .bss.current_led_index:00000000 current_led_index
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:409    .data.active_led_count:00000000 active_led_count
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:136    .text.on_button1_rise:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:142    .text.on_button1_rise:00000000 on_button1_rise
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:178    .text.on_button1_rise:0000001c $d
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:184    .text.on_button2_rise:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:190    .text.on_button2_rise:00000000 on_button2_rise
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:231    .text.on_button2_rise:00000028 $d
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:238    .text.main:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:244    .text.main:00000000 main
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:331    .text.main:00000084 $d
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:429    .bss.btn1_sequence:00000000 btn1_sequence
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:422    .bss.btn2_count:00000000 btn2_count
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:342    .text.SysTick_Handler:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:348    .text.SysTick_Handler:00000000 SysTick_Handler
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:398    .text.SysTick_Handler:00000030 $d
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:436    .bss.millis:00000000 millis
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:416    .bss.current_led_index:00000000 $d
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:419    .bss.btn2_count:00000000 $d
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:426    .bss.btn1_sequence:00000000 $d
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:433    .bss.millis:00000000 $d
+C:\Users\JV4K\AppData\Local\Temp\ccm829HA.s:439    .rodata:00000000 $d
+
+UNDEFINED SYMBOLS
+SystemClock_Config
+SysTick_Init
+GPIOA_Init_Direct
+GPIOB_Init_Macro
+GPIOC_Init_CMSIS
+Button_Init
+Button_SetRiseCallback
+Button_SetContext
+Button_Process

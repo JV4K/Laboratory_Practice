@@ -1,0 +1,195 @@
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\cchJc1QM.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"rcc.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/rcc.c"
+  20              		.section	.text.SystemClock_Config,"ax",%progbits
+  21              		.align	1
+  22              		.global	SystemClock_Config
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	SystemClock_Config:
+  28              	.LFB130:
+   1:Core/Src/rcc.c **** #include "rcc.h"
+   2:Core/Src/rcc.c **** 
+   3:Core/Src/rcc.c **** void SystemClock_Config(void) {
+  29              		.loc 1 3 31 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 08B5     		push	{r3, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 3, -8
+  37              		.cfi_offset 14, -4
+   4:Core/Src/rcc.c ****     // 1. Enable HSI/HSE and wait for it to be ready
+   5:Core/Src/rcc.c ****     // Use HSE (8MHz) as the PLL source
+   6:Core/Src/rcc.c ****     RCC->CR |= RCC_CR_HSEON;
+  38              		.loc 1 6 5 view .LVU1
+  39              		.loc 1 6 8 is_stmt 0 view .LVU2
+  40 0002 194A     		ldr	r2, .L6
+  41 0004 1368     		ldr	r3, [r2]
+  42              		.loc 1 6 13 view .LVU3
+  43 0006 43F48033 		orr	r3, r3, #65536
+  44 000a 1360     		str	r3, [r2]
+   7:Core/Src/rcc.c ****     while (!(RCC->CR & RCC_CR_HSERDY));
+  45              		.loc 1 7 5 is_stmt 1 view .LVU4
+  46              	.L2:
+  47              		.loc 1 7 12 discriminator 1 view .LVU5
+  48              		.loc 1 7 17 is_stmt 0 discriminator 1 view .LVU6
+  49 000c 164B     		ldr	r3, .L6
+  50 000e 1B68     		ldr	r3, [r3]
+  51              		.loc 1 7 12 discriminator 1 view .LVU7
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\cchJc1QM.s 			page 2
+
+
+  52 0010 13F4003F 		tst	r3, #131072
+  53 0014 FAD0     		beq	.L2
+   8:Core/Src/rcc.c **** 
+   9:Core/Src/rcc.c ****     // 2. Set Flash Latency for 168MHz (5 wait states)
+  10:Core/Src/rcc.c ****     // Also enable Prefetch, Instruction, and Data Caches (optional but recommended for max speed)
+  11:Core/Src/rcc.c ****     FLASH->ACR = FLASH_ACR_ICEN | FLASH_ACR_DCEN | FLASH_ACR_PRFTEN | FLASH_ACR_LATENCY_5WS;
+  54              		.loc 1 11 5 is_stmt 1 view .LVU8
+  55              		.loc 1 11 16 is_stmt 0 view .LVU9
+  56 0016 154B     		ldr	r3, .L6+4
+  57 0018 40F20572 		movw	r2, #1797
+  58 001c 1A60     		str	r2, [r3]
+  12:Core/Src/rcc.c **** 
+  13:Core/Src/rcc.c ****     // 3. Configure AHB/APB Prescalers
+  14:Core/Src/rcc.c ****     // AHB Prescaler = /1 (HCLK = 168 MHz)
+  15:Core/Src/rcc.c ****     RCC->CFGR |= RCC_CFGR_HPRE_DIV1;
+  59              		.loc 1 15 5 is_stmt 1 view .LVU10
+  60              		.loc 1 15 8 is_stmt 0 view .LVU11
+  61 001e A3F58063 		sub	r3, r3, #1024
+  62 0022 9A68     		ldr	r2, [r3, #8]
+  63              		.loc 1 15 15 view .LVU12
+  64 0024 9A60     		str	r2, [r3, #8]
+  16:Core/Src/rcc.c ****     // APB1 Prescaler = /4 (PCLK1 = 42 MHz - Max 42 MHz)
+  17:Core/Src/rcc.c ****     RCC->CFGR |= RCC_CFGR_PPRE1_DIV4;
+  65              		.loc 1 17 5 is_stmt 1 view .LVU13
+  66              		.loc 1 17 8 is_stmt 0 view .LVU14
+  67 0026 9A68     		ldr	r2, [r3, #8]
+  68              		.loc 1 17 15 view .LVU15
+  69 0028 42F4A052 		orr	r2, r2, #5120
+  70 002c 9A60     		str	r2, [r3, #8]
+  18:Core/Src/rcc.c ****     // APB2 Prescaler = /2 (PCLK2 = 84 MHz - Max 84 MHz)
+  19:Core/Src/rcc.c ****     RCC->CFGR |= RCC_CFGR_PPRE2_DIV2;
+  71              		.loc 1 19 5 is_stmt 1 view .LVU16
+  72              		.loc 1 19 8 is_stmt 0 view .LVU17
+  73 002e 9A68     		ldr	r2, [r3, #8]
+  74              		.loc 1 19 15 view .LVU18
+  75 0030 42F40042 		orr	r2, r2, #32768
+  76 0034 9A60     		str	r2, [r3, #8]
+  20:Core/Src/rcc.c **** 
+  21:Core/Src/rcc.c ****     // 4. Configure the Main PLL
+  22:Core/Src/rcc.c ****     // PLL source is HSE, PLLM=8, PLLN=336, PLLP=2 (0b00)
+  23:Core/Src/rcc.c ****     // PLLQ = 7 (required for USB/SDIO/RNG, 48MHz for USB is 336/7)
+  24:Core/Src/rcc.c ****     RCC->PLLCFGR = (8 << RCC_PLLCFGR_PLLM_Pos) | 
+  77              		.loc 1 24 5 is_stmt 1 view .LVU19
+  78              		.loc 1 24 18 is_stmt 0 view .LVU20
+  79 0036 0E4A     		ldr	r2, .L6+8
+  80 0038 5A60     		str	r2, [r3, #4]
+  25:Core/Src/rcc.c ****                    (336 << RCC_PLLCFGR_PLLN_Pos) | 
+  26:Core/Src/rcc.c ****                    (0 << RCC_PLLCFGR_PLLP_Pos) | // PLLP = /2
+  27:Core/Src/rcc.c ****                    (7 << RCC_PLLCFGR_PLLQ_Pos) | 
+  28:Core/Src/rcc.c ****                    RCC_PLLCFGR_PLLSRC_HSE;
+  29:Core/Src/rcc.c **** 
+  30:Core/Src/rcc.c ****     // 5. Enable the PLL and wait for it to be ready
+  31:Core/Src/rcc.c ****     RCC->CR |= RCC_CR_PLLON;
+  81              		.loc 1 31 5 is_stmt 1 view .LVU21
+  82              		.loc 1 31 8 is_stmt 0 view .LVU22
+  83 003a 1A68     		ldr	r2, [r3]
+  84              		.loc 1 31 13 view .LVU23
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\cchJc1QM.s 			page 3
+
+
+  85 003c 42F08072 		orr	r2, r2, #16777216
+  86 0040 1A60     		str	r2, [r3]
+  32:Core/Src/rcc.c ****     while (!(RCC->CR & RCC_CR_PLLRDY));
+  87              		.loc 1 32 5 is_stmt 1 view .LVU24
+  88              	.L3:
+  89              		.loc 1 32 12 discriminator 1 view .LVU25
+  90              		.loc 1 32 17 is_stmt 0 discriminator 1 view .LVU26
+  91 0042 094B     		ldr	r3, .L6
+  92 0044 1B68     		ldr	r3, [r3]
+  93              		.loc 1 32 12 discriminator 1 view .LVU27
+  94 0046 13F0007F 		tst	r3, #33554432
+  95 004a FAD0     		beq	.L3
+  33:Core/Src/rcc.c **** 
+  34:Core/Src/rcc.c ****     // 6. Switch the System Clock source to PLL
+  35:Core/Src/rcc.c ****     // SW[1:0] bits 10: PLL selected as system clock
+  36:Core/Src/rcc.c ****     RCC->CFGR |= RCC_CFGR_SW_PLL;
+  96              		.loc 1 36 5 is_stmt 1 view .LVU28
+  97              		.loc 1 36 8 is_stmt 0 view .LVU29
+  98 004c 064A     		ldr	r2, .L6
+  99 004e 9368     		ldr	r3, [r2, #8]
+ 100              		.loc 1 36 15 view .LVU30
+ 101 0050 43F00203 		orr	r3, r3, #2
+ 102 0054 9360     		str	r3, [r2, #8]
+  37:Core/Src/rcc.c ****     while ((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_PLL);
+ 103              		.loc 1 37 5 is_stmt 1 view .LVU31
+ 104              	.L4:
+ 105              		.loc 1 37 39 discriminator 1 view .LVU32
+ 106              		.loc 1 37 16 is_stmt 0 discriminator 1 view .LVU33
+ 107 0056 044B     		ldr	r3, .L6
+ 108 0058 9B68     		ldr	r3, [r3, #8]
+ 109              		.loc 1 37 23 discriminator 1 view .LVU34
+ 110 005a 03F00C03 		and	r3, r3, #12
+ 111              		.loc 1 37 39 discriminator 1 view .LVU35
+ 112 005e 082B     		cmp	r3, #8
+ 113 0060 F9D1     		bne	.L4
+  38:Core/Src/rcc.c **** 
+  39:Core/Src/rcc.c ****     // Update the SystemCoreClock variable for accurate timekeeping functions
+  40:Core/Src/rcc.c ****     SystemCoreClockUpdate();
+ 114              		.loc 1 40 5 is_stmt 1 view .LVU36
+ 115 0062 FFF7FEFF 		bl	SystemCoreClockUpdate
+ 116              	.LVL0:
+  41:Core/Src/rcc.c **** }
+ 117              		.loc 1 41 1 is_stmt 0 view .LVU37
+ 118 0066 08BD     		pop	{r3, pc}
+ 119              	.L7:
+ 120              		.align	2
+ 121              	.L6:
+ 122 0068 00380240 		.word	1073887232
+ 123 006c 003C0240 		.word	1073888256
+ 124 0070 08544007 		.word	121656328
+ 125              		.cfi_endproc
+ 126              	.LFE130:
+ 128              		.text
+ 129              	.Letext0:
+ 130              		.file 2 "C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/machine/_default
+ 131              		.file 3 "C:/ST_toolchain/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/sys/_stdint.h"
+ 132              		.file 4 "CMSIS/Devices/STM32F4xx/Inc/STM32F407xx/stm32f407xx.h"
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\cchJc1QM.s 			page 4
+
+
+ 133              		.file 5 "CMSIS/Devices/STM32F4xx/Inc/system_stm32f4xx.h"
+ARM GAS  C:\Users\JV4K\AppData\Local\Temp\cchJc1QM.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 rcc.c
+C:\Users\JV4K\AppData\Local\Temp\cchJc1QM.s:21     .text.SystemClock_Config:00000000 $t
+C:\Users\JV4K\AppData\Local\Temp\cchJc1QM.s:27     .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\JV4K\AppData\Local\Temp\cchJc1QM.s:122    .text.SystemClock_Config:00000068 $d
+
+UNDEFINED SYMBOLS
+SystemCoreClockUpdate

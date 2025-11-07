@@ -15,8 +15,8 @@
 ######################################
 # target
 ######################################
-TARGET_SERIES = STM32F411
-TARGET_VERSION = RE
+TARGET_SERIES = STM32F407
+TARGET_VERSION = VE
 
 ######################################
 # building variables
